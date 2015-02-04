@@ -1,26 +1,29 @@
 <?php
 
-class WP_Services extends WP_Widget {
+class WP_Short_Text extends WP_Widget {
+   
 
     public function __construct() {
         parent::__construct(
-                'WP_Services', // Base ID
-                'Home Services', // Name
-                array('description' => 'Show list services on home page')
+                'WP_Short_Text', // Base ID
+                'Home Short Text', // Name
+                array('description' => 'Short text on big images top')
         );
     }
 
     public function widget($args, $instance) {
-        extract($args);
-        echo 'List service';
+        extract($args); 
+        
+        echo 'Home short text';
+        
     }
 
     public function update($new_instance, $old_instance) {
         $instance = $old_instance;
-        $instance['title'] = $new_instance['title'];
-        $instance['number'] = $new_instance['number'];
+        $instance['title'] = $new_instance['title'];        
+        $instance['content'] = $new_instance['content'];
         $instance['link'] = strip_tags($new_instance['link']);
-        $instance['link_target'] = strip_tags($new_instance['link_target']);
+        $instance['link_target'] = strip_tags($new_instance['link_target']);       
         return $instance;
     }
 
@@ -29,20 +32,18 @@ class WP_Services extends WP_Widget {
             $title = '';
         } else {
             $title = $instance['title'];
-        }
+        }        
         ?>
-
+       
         <p>
             <label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:'); ?></label> 
             <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo esc_attr($title); ?>" />
         </p>
-
-        <p id="div_number">
-            <label for="<?php echo $this->get_field_id('number'); ?>"><?php _e('Number of services to show:'); ?></label> 
-            <input class="widefat" id="<?php echo $this->get_field_id('number'); ?>" name="<?php echo $this->get_field_name('number'); ?>" type="text" value="<?php echo esc_attr($instance['number']); ?>" />
+        
+        <p>
+            <label for="<?php echo $this->get_field_id('content'); ?>"><?php _e('Content:'); ?></label> 
+            <textarea rows="8" class="widefat" id="<?php echo $this->get_field_id('content'); ?>" name="<?php echo $this->get_field_name('content'); ?>"><?php echo format_to_edit($instance['content']); ?></textarea>
         </p>
-
-
         <p id="div_link">
             <label for="<?php echo $this->get_field_id('link'); ?>"><?php _e('Link:'); ?></label> 
             <input class="widefat" id="<?php echo $this->get_field_id('link'); ?>" name="<?php echo $this->get_field_name('link'); ?>" type="text" value="<?php echo esc_attr($instance['link']); ?>" />
@@ -52,10 +53,9 @@ class WP_Services extends WP_Widget {
                 <option value="pop_up" <?php if ($instance['link_target'] == 'pop_up') echo "selected='true'"; ?>><?php _e('Open popup'); ?></option>
             </select>
         </p>
-
         <?php
     }
 
 }
 
-add_action('widgets_init', create_function('', 'register_widget( "WP_Services" );'));
+add_action('widgets_init', create_function('', 'register_widget( "WP_Short_Text" );'));
