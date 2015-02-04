@@ -14,7 +14,22 @@ class WP_Testimonial extends WP_Widget {
 
     public function widget($args, $instance) {
         extract($args);
-        echo '';
+        $posts = get_posts(array(
+            'posts_per_page' => $instance['number'],
+            'post_type' => 'testimonial',
+            'meta_key' => 'show_on_homepage',
+            'meta_value' => 1
+        ));
+        if ($posts) {
+            echo '<ul>';
+
+            foreach ($posts as $post) {
+                echo '<li><a href="' . get_permalink($post->ID) . '">' . get_the_title($post->ID) . '</a></li>';
+            }
+
+            echo '</ul>';
+        }
+        echo 'List testsadsd';
     }
 
     public function update($new_instance, $old_instance) {
@@ -41,9 +56,9 @@ class WP_Testimonial extends WP_Widget {
 
         <div id="div_background_image">
             <label><?php _e('Background Image:'); ?></label>
-            <?php echo $image_bg->get_widget_field('bg_image', 'bg'); ?>
+        <?php echo $image_bg->get_widget_field('bg_image', 'bg'); ?>
         </div>
-        
+
         <p id="div_number">
             <label for="<?php echo $this->get_field_id('number'); ?>"><?php _e('Number of testimonials to show:'); ?></label> 
             <input class="widefat" id="<?php echo $this->get_field_id('number'); ?>" name="<?php echo $this->get_field_name('number'); ?>" type="text" value="<?php echo esc_attr($instance['number']); ?>" />
