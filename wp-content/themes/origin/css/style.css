@@ -1,0 +1,107 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 4, 2015, 11:08:26 AM
+    Author     : Mr.Ngoc
+*/
+
+
+* { margin: 0; padding: 0; } 
+@font-face{
+    font-family: "GretoonHighlight";
+    src: url("fonts/GretoonHighlight.ttf") format("truetype");;
+}
+@font-face{
+    font-family: "Gretoon";
+    src: url("fonts/Gretoon.ttf") format("truetype");;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 14px;
+    font-family: Arial;
+    vertical-align: baseline;
+}
+.row{
+    margin: 0;
+}
+.row, .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, 
+.col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, 
+.col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, 
+.col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, 
+.col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, 
+.col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, 
+.col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, 
+.col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, 
+.col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, 
+.col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, 
+.col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, 
+.col-xs-12, .col-sm-12, .col-md-12, .col-lg-12{
+    padding: 0;
+}
+ul, ol {list-style: none;}
+strong {font-weight: bold;}
+
+article, aside, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+.group:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+.group { display: inline-block; clear: both; }
+/* start commented backslash hack \*/ * html .group { height: 1%; } .group { display: block; } /* close commented backslash hack */
+
+body { font: 14px Arial;}
+
+/*
+        TYPOGRAPHY
+*/
+h1, h2, h3, h4, h5 {}
+a img { border: 0; }
+a {color: #c00c0c; text-decoration: none;}
+.zoomer:active { top: 0; }
+
+
+/* header */
+.navbar-cya{
+    background-color: #fff;
+    border: none;
+}
+.bottom-header img{
+    display: inline-block;
+    float: right;
+    padding-right: 50px;
+}
+.header-social ul li{
+    float: left;
+    padding-left: 5px;
+}
+.header-social ul li i{
+    width: 30px;
+    height: 30px;
+    display: block;
+    background: url(../images/social-icons.png) no-repeat;    
+}
+.header-social ul li i.sc-LinkIn{
+    background-position: 0 -30px;
+}
+.header-social ul li i.sc-google{
+    background-position: 0 -60px;
+}
+.header-social ul li i.sc-facebook{
+    background-position: 0 -90px;
+}
+.header-social ul li i.sc-twiter{
+    background-position: 0 -120px;
+}

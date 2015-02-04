@@ -6,9 +6,18 @@ automatic_feed_links();
 // Load jQuery
 if (!is_admin()) {
     wp_deregister_script('jquery');
-    wp_register_script('jquery', ("http://localhost/cya-wp/wp-includes/js/jquery/jquery.js?ver=1.11.1"), false);
+    wp_register_script('jquery', ("http://localhost/cya-wp/wp-content/themes/origin/js/jquery.js"), false);
     wp_enqueue_script('jquery');
 }
+
+function wpbootstrap_scripts_with_jquery() {
+    // Register the script like this for a theme:
+    wp_register_script('custom-script', get_template_directory_uri() . '/js/bootstrap.js', array('jquery'));
+    // For either a plugin or a theme, you can then enqueue the script:
+    wp_enqueue_script('custom-script');
+}
+
+add_action('wp_enqueue_scripts', 'wpbootstrap_scripts_with_jquery');
 
 // Clean up the <head>
 function removeHeadLinks() {
@@ -32,7 +41,7 @@ if (function_exists('register_sidebar')) {
     ));
 }
 add_theme_support('post-thumbnails');
-
+add_theme_support( 'custom-header' );
 function wp_services_() {
     register_post_type(
             "services", array(
@@ -71,7 +80,6 @@ function wp_testimonial_() {
 
 add_action('init', 'wp_testimonial_');
 
-
 function wp_supplier_() {
     register_post_type(
             "supplier", array(
@@ -91,6 +99,7 @@ function wp_supplier_() {
 
 add_action('init', 'wp_supplier_');
 
+require_once ( get_template_directory() . '/theme-options.php' );
 include ABSPATH . 'wp-content/themes/origin/widgets/Services.php';
 include ABSPATH . 'wp-content/themes/origin/widgets/Testimonial.php';
 include ABSPATH . 'wp-content/themes/origin/widgets/Supplier.php';
