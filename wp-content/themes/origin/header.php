@@ -52,20 +52,27 @@
         <div id="page-wrap">
 
             <div id="header">
-                <div class="top-header">
+                <div class="top-header group">
                     <?php
                     $options = get_option('wp_theme_options');
                     ?>
                     <div class="header-contact col-sm-6">
-                        <div><?php echo $options['email']; ?></div>
-                        <div><?php echo $options['phone']; ?></div>
+                        <div class="header-contact-content">
+                            <div class="header-contact-icon"><i class="fa fa-envelope"></i></div>
+                            <div class="header-contact-value"><?php echo $options['email']; ?></div>
+                        </div>
+                        <span>|</span>
+                        <div class="header-contact-content">
+                            <div class="header-contact-icon"><i class="fa fa-phone"></i></div>
+                            <div class="header-contact-value"><?php echo $options['phone']; ?></div>
+                        </div>
                     </div>
                     <div class="header-social col-sm-6">
                         <ul class="group">
-                            <li><a href="<?php echo $options['LinkIn_url']; ?>"><i class="sc-LinkIn"></i></a></li>                 
-                            <li><a href="<?php echo $options['google_url']; ?>"><i class="sc-google"></i></a></li>       
+                            <li><a href="<?php echo $options['LinkIn_url']; ?>"><i class="fa fa-linkedin"></i></a></li>                 
+                            <li><a href="<?php echo $options['google_url']; ?>"><i class="fa fa-google-plus"></i></a></li>       
                             <li><a href="<?php echo $options['fb_url']; ?>"><i class="fa fa-facebook"></i></a></li>                        
-                            <li><a href="<?php echo $options['twitter_url']; ?>"><i class="sc-twiter"></i></a></li>                                
+                            <li><a href="<?php echo $options['twitter_url']; ?>"><i class="fa fa-twitter"></i></a></li>                                
                         </ul>
                     </div>
                 </div>
