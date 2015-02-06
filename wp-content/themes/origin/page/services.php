@@ -10,92 +10,92 @@
         </div>
         <div class="about group">
             
-            <div class="services-body col-sm-4">
+            <div class="services-body col-sm-4">                
                 <div class="services-icon">
-                    <img src="http://localhost/cya-wp/wp-content/themes/origin/images/services-icon.png" />
+                  <a href="#"><img src="http://localhost/cya-wp/wp-content/themes/origin/images/services-icon.png" /></a>
                 </div>
                 <div class="col-sm-9 services-page-content">
-                    <h4>Complete Home Renovations</h4>
+                   <a href="#"> <h4>Complete Home Renovations</h4></a>
                     <span>It is a long established fact that a reader will be distracted.</span>
                 </div>
             </div>
             
-            <div class="services-body col-sm-4">
+            <div class="services-body col-sm-4">                
                 <div class="services-icon">
-                    <img src="http://localhost/cya-wp/wp-content/themes/origin/images/services-icon.png" />
+                  <a href="#"><img src="http://localhost/cya-wp/wp-content/themes/origin/images/services-icon.png" /></a>
                 </div>
                 <div class="col-sm-9 services-page-content">
-                    <h4>Complete Home Renovations</h4>
+                   <a href="#"> <h4>Complete Home Renovations</h4></a>
                     <span>It is a long established fact that a reader will be distracted.</span>
                 </div>
             </div>
             
-            <div class="services-body col-sm-4">
+            <div class="services-body col-sm-4">                
                 <div class="services-icon">
-                    <img src="http://localhost/cya-wp/wp-content/themes/origin/images/services-icon.png" />
+                  <a href="#"><img src="http://localhost/cya-wp/wp-content/themes/origin/images/services-icon.png" /></a>
                 </div>
                 <div class="col-sm-9 services-page-content">
-                    <h4>Complete Home Renovations</h4>
+                   <a href="#"> <h4>Complete Home Renovations</h4></a>
                     <span>It is a long established fact that a reader will be distracted.</span>
                 </div>
             </div>
             
-            <div class="services-body col-sm-4">
+            <div class="services-body col-sm-4">                
                 <div class="services-icon">
-                    <img src="http://localhost/cya-wp/wp-content/themes/origin/images/services-icon.png" />
+                  <a href="#"><img src="http://localhost/cya-wp/wp-content/themes/origin/images/services-icon.png" /></a>
                 </div>
                 <div class="col-sm-9 services-page-content">
-                    <h4>Complete Home Renovations</h4>
+                   <a href="#"> <h4>Complete Home Renovations</h4></a>
                     <span>It is a long established fact that a reader will be distracted.</span>
                 </div>
             </div>
             
-            <div class="services-body col-sm-4">
+            <div class="services-body col-sm-4">                
                 <div class="services-icon">
-                    <img src="http://localhost/cya-wp/wp-content/themes/origin/images/services-icon.png" />
+                  <a href="#"><img src="http://localhost/cya-wp/wp-content/themes/origin/images/services-icon.png" /></a>
                 </div>
                 <div class="col-sm-9 services-page-content">
-                    <h4>Complete Home Renovations</h4>
+                   <a href="#"> <h4>Complete Home Renovations</h4></a>
                     <span>It is a long established fact that a reader will be distracted.</span>
                 </div>
             </div>
             
-            <div class="services-body col-sm-4">
+            <div class="services-body col-sm-4">                
                 <div class="services-icon">
-                    <img src="http://localhost/cya-wp/wp-content/themes/origin/images/services-icon.png" />
+                  <a href="#"><img src="http://localhost/cya-wp/wp-content/themes/origin/images/services-icon.png" /></a>
                 </div>
                 <div class="col-sm-9 services-page-content">
-                    <h4>Complete Home Renovations</h4>
+                   <a href="#"> <h4>Complete Home Renovations</h4></a>
                     <span>It is a long established fact that a reader will be distracted.</span>
                 </div>
             </div>
             
-            <div class="services-body col-sm-4">
+            <div class="services-body col-sm-4">                
                 <div class="services-icon">
-                    <img src="http://localhost/cya-wp/wp-content/themes/origin/images/services-icon.png" />
+                  <a href="#"><img src="http://localhost/cya-wp/wp-content/themes/origin/images/services-icon.png" /></a>
                 </div>
                 <div class="col-sm-9 services-page-content">
-                    <h4>Complete Home Renovations</h4>
+                   <a href="#"> <h4>Complete Home Renovations</h4></a>
                     <span>It is a long established fact that a reader will be distracted.</span>
                 </div>
             </div>
             
-            <div class="services-body col-sm-4">
+            <div class="services-body col-sm-4">                
                 <div class="services-icon">
-                    <img src="http://localhost/cya-wp/wp-content/themes/origin/images/services-icon.png" />
+                  <a href="#"><img src="http://localhost/cya-wp/wp-content/themes/origin/images/services-icon.png" /></a>
                 </div>
                 <div class="col-sm-9 services-page-content">
-                    <h4>Complete Home Renovations</h4>
+                   <a href="#"> <h4>Complete Home Renovations</h4></a>
                     <span>It is a long established fact that a reader will be distracted.</span>
                 </div>
             </div>
             
-            <div class="services-body col-sm-4">
+            <div class="services-body col-sm-4">                
                 <div class="services-icon">
-                    <img src="http://localhost/cya-wp/wp-content/themes/origin/images/services-icon.png" />
+                  <a href="#"><img src="http://localhost/cya-wp/wp-content/themes/origin/images/services-icon.png" /></a>
                 </div>
                 <div class="col-sm-9 services-page-content">
-                    <h4>Complete Home Renovations</h4>
+                   <a href="#"> <h4>Complete Home Renovations</h4></a>
                     <span>It is a long established fact that a reader will be distracted.</span>
                 </div>
             </div>
