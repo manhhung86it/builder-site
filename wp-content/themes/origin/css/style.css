@@ -85,6 +85,9 @@ a {color: #c00c0c; text-decoration: none;}
 .bottom-header{
     padding: 30px 0px;
 }
+.bottom-header-image-invisible{
+    display: none;
+}
 .bottom-header img{
     display: inline-block;
     float: right;
@@ -137,11 +140,13 @@ a {color: #c00c0c; text-decoration: none;}
 
 .body-top{
     background: url("../images/home-background-top.png")no-repeat top left;
-    min-height: 875px;
+    min-height: 690px;
+    background-size:100% 100%;
 }
 .body-bottom{
     background: url("../images/home-background-bottom.png")no-repeat top left;
     min-height: 300px;
+    background-size:100% 100%;
 }
 .first-table,
 .second-table{
@@ -149,9 +154,7 @@ a {color: #c00c0c; text-decoration: none;}
 }
 .first-table{
     background-color: white;
-    top: 40px;
-    left: 273px;
-    min-height: 200px;
+    min-height: 220px;
 }
 .first-table-title{
     font-size: 25px;
@@ -162,9 +165,7 @@ a {color: #c00c0c; text-decoration: none;}
     padding: 15px 10px 0px 10px;
 }
 .second-table{
-    top: 350px;
-    left: 440px;
-    min-height: 350px;
+    min-height: 320px;
     background: black;
     opacity: 0.8;
 }
@@ -335,4 +336,98 @@ a {color: #c00c0c; text-decoration: none;}
     color: #816b5d;
     font-size: 12px;
     padding: 30px 0px;
+}
+
+
+
+@media only screen and (min-width: 1200px) {
+}
+@media only screen and (min-width: 768px) {
+    .second-table{
+        top: 350px;
+        left: 440px;
+    }
+    .first-table{
+        top: 40px;
+        left: 273px;
+    }
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1200px) {
+}
+
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) { 
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    .first-table{
+        left: 200px;
+        min-width: 260px;
+    }
+    .second-table{
+        left: 190px;
+        min-width: 270px;
+    }
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+    .top-header{
+        border-bottom: none;
+    }
+    .header-social{
+        text-align: center;
+        padding-top: 6px;
+    }
+    .header-social ul{
+        float: none;
+        padding-right: 0px;
+    }
+    .bottom-header-image{
+        display: none;
+    }
+    .bottom-header-image-invisible{
+        padding: 20px;
+        display: block;
+        text-align: center;
+    }
+    .bottom-header-image-invisible img{
+        display: inline-block;
+    }
+    .bottom-header{
+        padding: 0px;
+    }
+    .navbar-header button{
+        float: left;
+    }
+    .mainslider{
+        width: 90%;
+    }
+    .body-top{
+        text-align: center;
+    }
+    .second-table,
+    .first-table{
+        position: relative;
+        display: inline-block;
+        float: none;
+        margin-top: 20px;
+    }
+
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+    .news-letter-content input[type="text"]{
+        width: 200px;
+    }
+}
+@media only screen and (min-width: 480px) and (max-width: 600px) {
 }

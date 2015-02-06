@@ -1,12 +1,13 @@
 <?php get_header(); ?>
 <div class="body">
     <div class="body-top">
-        <div class="col-sm-3 first-table">
+        <div class="col-sm-3 col-xs-8 first-table">
             <div class="first-table-title">Color Me Beautiful</div>
             <div class="first-table-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 
             </div>
+            <div class="second-table-button"><a href="#" class="btn cya-btn">DETAIL  ></a></div>
         </div>
-        <div class="col-sm-3 second-table">
+        <div class="col-sm-3 col-xs-8 second-table">
             <div class="second-table-content">
                 <ul>
                     <li><div class="li-style">&#9632;</div> Complete Home Renovations</li>

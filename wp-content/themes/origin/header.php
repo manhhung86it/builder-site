@@ -44,6 +44,7 @@
         <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
         <?php if (is_singular()) wp_enqueue_script('comment-reply'); ?>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <?php wp_head(); ?>
     </head>
 
@@ -52,7 +53,14 @@
         <div id="page-wrap">
 
             <div id="header">
-                <div class="top-header group">
+                <div class="top-header group">                   
+                    
+                    <div class="bottom-header-image-invisible">
+                        <?php if (get_header_image()) : ?>
+                            <a href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php header_image(); ?>" class="img-responsive" alt="" /></a>
+                        <?php endif; ?> 
+                    </div>
+                    
                     <?php
                     $options = get_option('wp_theme_options');
                     ?>
@@ -67,6 +75,7 @@
                             <div class="header-contact-value"><?php echo $options['phone']; ?></div>
                         </div>
                     </div>
+                    
                     <div class="header-social col-sm-6">
                         <ul class="group">
                             <li><a href="<?php echo $options['LinkIn_url']; ?>"><i class="fa fa-linkedin"></i></a></li>                 
@@ -75,9 +84,9 @@
                             <li><a href="<?php echo $options['twitter_url']; ?>"><i class="fa fa-twitter"></i></a></li>                                
                         </ul>
                     </div>
-                </div>
+                </div>                
                 <div class="bottom-header group">
-                    <div class="col-sm-4">
+                    <div class="bottom-header-image col-sm-4">
                         <?php if (get_header_image()) : ?>
                             <a href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php header_image(); ?>" class="img-responsive" alt="" /></a>
                         <?php endif; ?> 
