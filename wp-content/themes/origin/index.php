@@ -1,5 +1,12 @@
 <?php get_header(); ?>
-<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Home Sidebar - Top") || !dynamic_sidebar("Home Sidebar - Middle") ) : endif; ?>
+
+<div class="body">
+    <div class="body-top">
+        <?php dynamic_sidebar('Home Sidebar - Top'); ?> 
+    </div>
+</div>
+
+
 <div class="body">
     <div class="body-top">
         <div class="col-sm-3 col-xs-8 first-table">

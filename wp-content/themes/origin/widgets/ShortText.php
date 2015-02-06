@@ -19,7 +19,7 @@ class WP_Short_Text extends WP_Widget {
             <?php
             if ($instance['link'] != ''):
                 ?>
-                <div class="first-table-button"><a href="<?php echo $instance['link'] ?>" target="<?php echo $instance['link_target']; ?>" class="btn cya-btn">DETAIL  &gt;</a></div>
+                <div class="second-table-button"><a href="<?php echo $instance['link'] ?>" target="<?php echo $instance['link_target']; ?>" class="btn cya-btn">DETAIL  &gt;</a></div>
                 <?php
             endif;
             ?>

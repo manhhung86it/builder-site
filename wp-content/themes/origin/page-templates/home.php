@@ -7,8 +7,13 @@
 
 get_header();
 ?>
-<?php dynamic_sidebar( 'Home Sidebar - Top' ); ?>   
-<?php dynamic_sidebar( 'Home Sidebar - Middle' ); ?>   
+<div class="body">
+    <div class="body-top">
+        <?php dynamic_sidebar('Home Sidebar - Top'); ?> 
+    </div>
+</div>
+
+<?php dynamic_sidebar('Home Sidebar - Middle'); ?>   
 
 
 <?php get_footer(); ?>

@@ -12,7 +12,26 @@ class WP_Services extends WP_Widget {
 
     public function widget($args, $instance) {
         extract($args);
-        echo 'List service';
+        $posts = get_posts(array(
+            'posts_per_page' => $instance['number'],
+            'post_type' => 'services',
+            'meta_key' => 'show_on_homepage',
+            'meta_value' => 1
+        ));
+        if ($posts) {
+            $list_services = '<div class="col-sm-3 col-xs-8 second-table"> <div class="second-table-content"> <ul>';
+            foreach ($posts as $post) {                
+                $list_services .= '<li><div class="li-style">&#9632;</div> <a href="'.get_post_permalink($post->ID).'">'.$post->post_title.'</a></li>';
+            }
+            $list_services .='</ul></div>';
+
+            if ($instance['link'] != '') {
+                $list_services .='<div class="second-table-button"><a href="' . $instance['link'] . '" target="' . $instance['link_target'] . '" class="btn cya-btn">DETAIL  &gt;</a></div>';
+            }
+
+            $list_services .='</div>';
+            echo $list_services;
+        }
     }
 
     public function update($new_instance, $old_instance) {
