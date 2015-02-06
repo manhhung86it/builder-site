@@ -1,7 +1,6 @@
 <?php
 
 class WP_Short_Text extends WP_Widget {
-   
 
     public function __construct() {
         parent::__construct(
@@ -12,18 +11,28 @@ class WP_Short_Text extends WP_Widget {
     }
 
     public function widget($args, $instance) {
-        extract($args); 
-        
-        echo 'Home short text';
-        
+        extract($args);
+        ?>
+        <div class="col-sm-3 first-table">
+            <div class="first-table-title"><?php echo $instance['title'] ?></div>
+            <div class="first-table-content"><?php echo $instance['content'] ?></div>
+            <?php
+            if ($instance['link'] != ''):
+                ?>
+                <div class="first-table-button"><a href="<?php echo $instance['link'] ?>" target="<?php echo $instance['link_target']; ?>" class="btn cya-btn">DETAIL  &gt;</a></div>
+                <?php
+            endif;
+            ?>
+        </div>
+        <?php
     }
 
     public function update($new_instance, $old_instance) {
         $instance = $old_instance;
-        $instance['title'] = $new_instance['title'];        
+        $instance['title'] = $new_instance['title'];
         $instance['content'] = $new_instance['content'];
         $instance['link'] = strip_tags($new_instance['link']);
-        $instance['link_target'] = strip_tags($new_instance['link_target']);       
+        $instance['link_target'] = strip_tags($new_instance['link_target']);
         return $instance;
     }
 
@@ -32,14 +41,14 @@ class WP_Short_Text extends WP_Widget {
             $title = '';
         } else {
             $title = $instance['title'];
-        }        
+        }
         ?>
-       
+
         <p>
             <label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:'); ?></label> 
             <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo esc_attr($title); ?>" />
         </p>
-        
+
         <p>
             <label for="<?php echo $this->get_field_id('content'); ?>"><?php _e('Content:'); ?></label> 
             <textarea rows="8" class="widefat" id="<?php echo $this->get_field_id('content'); ?>" name="<?php echo $this->get_field_name('content'); ?>"><?php echo format_to_edit($instance['content']); ?></textarea>

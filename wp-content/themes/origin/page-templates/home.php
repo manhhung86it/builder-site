@@ -7,7 +7,8 @@
 
 get_header();
 ?>
+<?php dynamic_sidebar( 'Home Sidebar - Top' ); ?>   
+<?php dynamic_sidebar( 'Home Sidebar - Middle' ); ?>   
 
-<?php dynamic_sidebar( 'Home Sidebar' ); ?>   
 
 <?php get_footer(); ?>
