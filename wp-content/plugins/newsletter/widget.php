@@ -93,7 +93,7 @@ class NewsletterWidget extends WP_Widget {
         global $newsletter;
         extract($args);
 
-        echo '<div class="news-letter" style="text-align: center;">';
+        echo '<div class="news-letter">';
         $options = get_option('newsletter');
         $options_profile = get_option('newsletter_profile');
 
