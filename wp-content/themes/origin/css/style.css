@@ -570,6 +570,7 @@ h4{
 }
 .-filters{
     text-align: center;
+    padding-bottom: 50px;
 }
 .-filters a{
     border: none !important;
