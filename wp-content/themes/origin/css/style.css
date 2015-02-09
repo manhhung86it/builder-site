@@ -279,7 +279,8 @@ a {color: #c00c0c; text-decoration: none;}
     text-align: center;
 }
 .news-letter{
-
+    text-align: center;
+    margin-top: 20px;
 }
 .news-letter-title{
     font-size: 24px;
@@ -316,7 +317,7 @@ a {color: #c00c0c; text-decoration: none;}
     font-weight: bold;
     color: #fff;
 }
-.news-letter-content input[type="text"]{
+.news-letter-content input[type="text"], .news-letter-content input[type="email"]{
     height: 30px;
     width: 300px;
     border-radius: 5px;
