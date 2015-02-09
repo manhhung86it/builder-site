@@ -12,7 +12,26 @@ class WP_Supplier extends WP_Widget {
 
     public function widget($args, $instance) {
         extract($args);
-        echo 'list supliers';
+        $posts = get_posts(array(
+            'posts_per_page' => $instance['number'],
+            'post_type' => 'supplier',
+            'meta_key' => 'show_on_homepage',
+            'meta_value' => 1
+        ));
+        if ($posts) {
+            $list_supplier = '<div class="services">SOME <span>CLIENTS</span> WHO USE OUR <span>SERVICES</span></div><hr>';
+            $list_supplier .= '<div class="services"> 
+                <div class="services-content"> 
+                    <ul class="group">';
+            foreach ($posts as $post) {
+                $list_supplier .= '<li><a href="' . get_post_permalink($post->ID) . '" title="' . $post->post_title . '">'.get_the_post_thumbnail($post->ID, 'thumbnail').'</a></li>';
+            }
+            $list_supplier .= '</ul>
+                <div class="services-content-button"><a href="#">More  >></a></div>
+            </div>
+        </div>';
+            echo $list_supplier;
+        }
     }
 
     public function update($new_instance, $old_instance) {

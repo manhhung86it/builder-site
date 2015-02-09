@@ -21,15 +21,26 @@ class WP_Testimonial extends WP_Widget {
             'meta_value' => 1
         ));
         if ($posts) {
-            echo '<ul>';
+
+            $list_testimonial = '<div class="testimonials-box">'
+                    . '<div class="mainslider">'
+                    . '<ul class="slides group">';
 
             foreach ($posts as $post) {
-                echo '<li><a href="' . get_permalink($post->ID) . '">' . get_the_title($post->ID) . '</a></li>';
+                $list_testimonial .='<li>'
+                        . get_the_post_thumbnail($post->ID, 'thumbnail')
+                        . '<div class="slider-content">'
+                        . '<div class="slider-title">' . $post->customer_name . '</div>'
+                        . '<span>' . $post->post_content . '</span>'
+                        . '</div>'
+                        . '</li>';
             }
 
-            echo '</ul>';
+            $list_testimonial .='</ul>'
+                    . '</div>'
+                    . '</div>';
+            echo $list_testimonial;
         }
-        echo 'List testsadsd';
     }
 
     public function update($new_instance, $old_instance) {
@@ -56,7 +67,7 @@ class WP_Testimonial extends WP_Widget {
 
         <div id="div_background_image">
             <label><?php _e('Background Image:'); ?></label>
-        <?php echo $image_bg->get_widget_field('bg_image', 'bg'); ?>
+            <?php echo $image_bg->get_widget_field('bg_image', 'bg'); ?>
         </div>
 
         <p id="div_number">

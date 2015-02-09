@@ -6,7 +6,7 @@ automatic_feed_links();
 // Load jQuery
 if (!is_admin()) {
     wp_deregister_script('jquery');
-    wp_register_script('jquery', ("http://localhost/cya-wp/wp-content/themes/origin/js/jquery.js"), false);
+    wp_register_script('jquery', (get_stylesheet_directory_uri() . "/js/jquery.js"), false);
     wp_enqueue_script('jquery');
 }
 
@@ -36,7 +36,6 @@ function wpslider_options_scripts_with_jquery() {
 }
 
 add_action('wp_enqueue_scripts', 'wpslider_options_scripts_with_jquery');
-
 
 // Clean up the <head>
 function removeHeadLinks() {
@@ -68,7 +67,7 @@ if (function_exists('register_sidebar')) {
         'before_title' => '<h3 class="widget-title">',
         'after_title' => '</h3>',
     ));
-    
+
     register_sidebar(array(
         'name' => __('Home Sidebar - Middle', 'pm'),
         'id' => 'sidebar-home',
@@ -77,7 +76,7 @@ if (function_exists('register_sidebar')) {
         'after_widget' => '</aside>',
         'before_title' => '<h3 class="widget-title">',
         'after_title' => '</h3>',
-    ));    
+    ));
 }
 add_theme_support('post-thumbnails');
 add_theme_support('custom-header');
