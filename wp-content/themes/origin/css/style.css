@@ -143,7 +143,7 @@ a {color: #c00c0c; text-decoration: none;}
     min-height: 690px;
     background-size:100% 100%;
 }
-.body-bottom{
+.testimonials-box{
     background: url("../images/home-background-bottom.png")no-repeat top left;
     min-height: 300px;
     background-size:100% 100%;
@@ -561,6 +561,30 @@ h4{
 }
 .gallery-top .about-top-content{
     top: 20px;
+}
+#filter-2{
+    display: none;
+}
+.-item .title{
+    display: none;
+}
+.-filters{
+    text-align: center;
+}
+.-filters a{
+    border: none !important;
+    font-size: 16px;
+    color: #000;
+}
+.-skin-default .-filters .-filter.active{
+    background: #fff;
+    color: #ffa78c;
+}
+.-skin-default .-items .-item .itembox{
+    border: none !important;
+}
+.-skin-default .-items .-item{
+    margin: 0px !important;
 }
 
 @media only screen and (min-width: 1200px) {

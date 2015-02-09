@@ -43,7 +43,7 @@
             </div>
         </div>
     </div>
-    <div class="body-bottom">
+    <div class="testimonials-box">
         <div class="mainslider">
             <ul class="slides group">
                 <li>
