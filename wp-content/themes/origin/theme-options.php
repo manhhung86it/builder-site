@@ -51,6 +51,19 @@ function theme_options_do_page() {
                     </td>
                 </tr>
                 
+                <tr valign="top"><th scope="row"><?php _e('Fax', 'wp'); ?></th>
+                    <td>
+                        <input id="wp_theme_options[fax]" class="regular-text" type="text" name="wp_theme_options[fax]" value="<?php esc_attr_e($options['fax']); ?>" />   
+                        <label class="description" for="wp_theme_options[fax]"><?php _e('Fax', 'wp'); ?></label>
+                    </td>
+                </tr>
+                <tr valign="top"><th scope="row"><?php _e('Address', 'wp'); ?></th>
+                    <td>
+                        <input id="wp_theme_options[address]" class="regular-text" type="text" name="wp_theme_options[address]" value="<?php esc_attr_e($options['address']); ?>" />   
+                        <label class="description" for="wp_theme_options[address]"><?php _e('Address', 'wp'); ?></label>
+                    </td>
+                </tr>
+                
                 <tr valign="top"><th scope="row"><?php _e('Facebook Link', 'wp'); ?></th>
                     <td>
                         <input id="wp_theme_options[fb_url]" class="regular-text" type="text" name="wp_theme_options[fb_url]" value="<?php esc_attr_e($options['fb_url']); ?>" />
@@ -92,6 +105,8 @@ function theme_options_do_page() {
 function theme_options_validate($input) {
     $input['email'] = wp_filter_nohtml_kses($input['email']);
     $input['phone'] = wp_filter_nohtml_kses($input['phone']);
+    $input['fax'] = wp_filter_nohtml_kses($input['fax']);
+    $input['address'] = wp_filter_nohtml_kses($input['address']);
     $input['fb_url'] = wp_filter_nohtml_kses($input['fb_url']);
     $input['twitter_url'] = wp_filter_nohtml_kses($input['twitter_url']);
     $input['google_url'] = wp_filter_nohtml_kses($input['google_url']);
