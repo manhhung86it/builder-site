@@ -4,34 +4,50 @@
  * and open the template in the editor.
  * Template Name: Services Page
  */
-
-get_header();
 ?>
-<?php query_posts(array('post_type' => 'services')); ?>
-<?php
-$i = 0;
-if (have_posts())
-    while (have_posts()) : the_post();
-        $i++;
-        ?>
-        <div class="col-md-6 entry_service <?php echo ($i % 3 ? '' : 'clear-left'); ?>" id="post-<?php the_ID(); ?>">
-            <a href="<?php echo the_permalink(); ?>">
-                <?php
-                if (has_post_thumbnail()) {
-                    $domsxe = simplexml_load_string(get_the_post_thumbnail());
-                    $thumbnailsrc = $domsxe->attributes()->src;
-                    echo '<img src="' . $thumbnailsrc . '">';
-                } else {
-                    ?>
-                    <img src="<?php echo $default_thumb->get_image_src('thumbnail'); ?>">
-                    <?php
-                }
-                ?></a>
-            <a href="<?php echo the_permalink(); ?>"><h1 class="service_title"><?php the_title(); ?></h1></a>
-            <div class="service_excerpt">
-                <?php the_excerpt(); ?>
-            </div>
-        </div>
-    <?php endwhile; ?>
+<?php get_header(); ?>
+<div class="body">
 
+    <?php dynamic_sidebar('about Sidebar - Top'); ?> 
+
+    <div class="about-body">
+        <div class="about-title">
+            <h1 class="border-left">SERVICES</h1>
+        </div>
+        <div class="about group"> 
+            <?php query_posts(array('post_type' => 'services')); ?>
+            <?php
+            $i = 0;
+            if (have_posts())
+                while (have_posts()) : the_post();
+                    $i++;
+                    ?>
+                    <div class="services-body col-sm-4">                
+                        <div class="services-icon">
+                            <a href="<?php echo the_permalink(); ?>">
+                                <?php
+                                if (has_post_thumbnail()) {
+                                    $domsxe = simplexml_load_string(get_the_post_thumbnail());
+                                    $thumbnailsrc = $domsxe->attributes()->src;
+                                    echo '<img src="' . $thumbnailsrc . '">';
+                                } else {
+                                    ?>
+                                    <img src="<?php echo $default_thumb->get_image_src('thumbnail'); ?>">
+                                    <?php
+                                }
+                                ?>
+                            </a>
+                        </div>
+                        <div class="col-sm-9 services-page-content">
+                            <a href="<?php echo the_permalink(); ?>"> 
+                                <h4><?php the_title(); ?></h4>
+                            </a>
+                            <span><?php the_excerpt(); ?></span>
+                        </div>
+                    </div>                    
+                <?php endwhile; ?>
+        </div>
+    </div>
+    <?php dynamic_sidebar('Newletter - bottom'); ?> 
+</div>
 <?php get_footer(); ?>

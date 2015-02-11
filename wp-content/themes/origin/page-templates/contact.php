@@ -9,46 +9,9 @@
 <?php get_header(); ?>
 <div class="body">
     <div class="body-bottom">
-        <div class="mainslider">
-            <ul class="slides group">
-                <li>
-                    <img src="http://localhost/cya-wp/wp-content/themes/origin/images/home-background-bottom.png" />
-                    <div class="slider-content">
-                        <div class="slider-title">BILL GATE</div>
-                        <span>The replacement of all kitchens and bathrooms involved detailed design development 
-                            and coordination, on-site inspections and detailed cost control. The management under 
-                            Iosh and Shay Nassi has an unquestioned integrity and honesty with outstanding 
-                            leadership qualities.”
-                        </span>
-                    </div>
-                </li>
-                <li>
-                    <img src="http://localhost/cya-wp/wp-content/themes/origin/images/home-background-top.png" />
-                    <div class="slider-content">
-                        <div class="slider-title">NGUYEN KIEN</div>
-                        <span>The replacement of all kitchens and bathrooms involved detailed design development 
-                            and coordination, on-site inspections and detailed cost control. The management under 
-                            Iosh and Shay Nassi has an unquestioned integrity and honesty with outstanding 
-                            leadership qualities.”
-                        </span>
-                    </div>
-                </li>
-                <li>
-                    <img src="http://localhost/cya-wp/wp-content/themes/origin/images/home-background-bottom.png" />
-                    <div class="slider-content">
-                        <div class="slider-title">NGUYEN KIEN</div>
-                        <span>The replacement of all kitchens and bathrooms involved detailed design development 
-                            and coordination, on-site inspections and detailed cost control. The management under 
-                            Iosh and Shay Nassi has an unquestioned integrity and honesty with outstanding 
-                            leadership qualities.”
-                        </span>
-                    </div>
-                </li>
-            </ul>
-        </div>
-
-
+        <?php dynamic_sidebar('Contact Sidebar - Top'); ?>         
     </div>
+
     <div id="content" role="main" class="about-body">
         <?php while (have_posts()) : the_post(); ?>           
             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -93,5 +56,6 @@
             </article><!-- #post -->
         <?php endwhile; // end of the loop.    ?>
     </div><!-- #content -->
+    <?php dynamic_sidebar('Newletter - bottom'); ?> 
 </div>
 <?php get_footer(); ?>

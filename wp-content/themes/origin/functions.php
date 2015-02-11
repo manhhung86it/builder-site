@@ -77,6 +77,34 @@ if (function_exists('register_sidebar')) {
         'before_title' => '<h3 class="widget-title">',
         'after_title' => '</h3>',
     ));
+    register_sidebar(array(
+        'name' => __('Contact Sidebar - Top', 'pm'),
+        'id' => 'sidebar-contact',
+        'description' => __('Appears on contact page', 'pm'),
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget' => '</aside>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+    ));
+    
+    register_sidebar(array(
+        'name' => __('about Sidebar - Top', 'pm'),
+        'id' => 'sidebar-about',
+        'description' => __('Appears on about page', 'pm'),
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget' => '</aside>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+    ));
+    register_sidebar(array(
+        'name' => __('Newletter - bottom', 'pm'),
+        'id' => 'newletter-bottom',
+        'description' => __('Appears on about page', 'pm'),
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget' => '</aside>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+    ));
 }
 add_theme_support('post-thumbnails');
 add_theme_support('custom-header');
@@ -119,6 +147,25 @@ function wp_testimonial_() {
 
 add_action('init', 'wp_testimonial_');
 
+function wp_abouttop_() {
+    register_post_type(
+            "abouttop", array(
+        'labels' => array(
+            'add_new' => 'Add New',
+            'name' => __('Abouttop'),
+            'singular_name' => __("Abouttop"),
+            'all_items' => __("All"),
+            'add_new_item' => __("Add"),
+            'edit_item' => __("Edit")),
+        'public' => true,
+        'show_ui' => true,
+        'hierarchical' => true,
+        'supports' => array('title', 'editor', 'excerpt', 'page-attributes', 'thumbnail'),)
+    );
+}
+
+add_action('init', 'wp_abouttop_');
+
 function wp_supplier_() {
     register_post_type(
             "supplier", array(
@@ -141,6 +188,7 @@ add_action('init', 'wp_supplier_');
 require_once ( get_template_directory() . '/theme-options.php' );
 include ABSPATH . 'wp-content/themes/origin/widgets/Services.php';
 include ABSPATH . 'wp-content/themes/origin/widgets/Testimonial.php';
+include ABSPATH . 'wp-content/themes/origin/widgets/Abouttop.php';
 include ABSPATH . 'wp-content/themes/origin/widgets/Supplier.php';
 include ABSPATH . 'wp-content/themes/origin/widgets/ShortText.php';
 ?>

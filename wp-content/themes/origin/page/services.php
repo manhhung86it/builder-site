@@ -8,8 +8,8 @@
         <div class="about-title">
             <h1 class="border-left">SERVICES</h1>
         </div>
-        <div class="about group">
-            
+        
+        <div class="about group">            
             <div class="services-body col-sm-4">                
                 <div class="services-icon">
                   <a href="#"><img src="http://localhost/cya-wp/wp-content/themes/origin/images/services-icon.png" /></a>

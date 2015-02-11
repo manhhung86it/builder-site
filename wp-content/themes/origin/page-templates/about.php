@@ -2,35 +2,44 @@
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
- * Template Name: About Page
  */
-
-get_header();
+/* Template Name: Contact Page
+ */
 ?>
-<?php query_posts(array('post_type' => 'about')); ?>
-<?php
-$i = 0;
-if (have_posts())
-    while (have_posts()) : the_post();
-        $i++;
-        ?>
-        <div class="col-md-6 entry_product <?php echo ($i % 3 ? '' : 'clear-left'); ?>" id="post-<?php the_ID(); ?>">
-            <a href="<?php echo the_permalink(); ?>">
-                <?php
-                if (has_post_thumbnail()) {
-                    $domsxe = simplexml_load_string(get_the_post_thumbnail());
-                    $thumbnailsrc = $domsxe->attributes()->src;
-                    echo '<img src="' . $thumbnailsrc . '">';
-                } else {
-                    ?>
-                    <img src="<?php echo $default_thumb->get_image_src('thumbnail'); ?>">
-                    <?php
-                }
-                ?></a>
-            <a href="<?php echo the_permalink(); ?>"><h1 class="product_title"><?php the_title(); ?></h1></a>
-            <div class="product_excerpt">
-        <?php the_excerpt(); ?>
-            </div>
-        </div>
-    <?php endwhile; ?>
+<?php get_header(); ?>
+<div class="body">
+    <?php dynamic_sidebar('about Sidebar - Top'); ?> 
+    <div class="about-body">
+        <?php while (have_posts()) : the_post(); ?>           
+            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                <div class="about-title">
+                    <h1 class="border-left">ABOUT</h1>
+                </div>
+                <div class="about group">
+
+                    <div class="col-sm-4 col-xs-12 about-image">
+                        <img src="http://localhost/cya-wp/wp-content/themes/origin/images/about-icon.png">
+                    </div>
+                    <div class="col-sm-8 col-xs-12 about-content">
+                        <div class="about-content-title">
+                            <h1><?php the_title(); ?></h1>
+                        </div>
+                        <div class="about-content-top">
+                            <?php the_content(); ?>
+                        </div>
+                        <div class="about-content-bottom">
+                            <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h3>
+                            <ul>
+                                <li><i class="fa fa-check"></i><span>Integer et augue nisi, sit amet molestie nisl. </span</li>
+                                <li><i class="fa fa-check"></i><span>Nam ullamcorper augue a purus congue in suscipit nunc molestie. </span</li>
+                                <li><i class="fa fa-check"></i><span>Integer iaculis mauris libero.</span</li>
+                            </ul>
+                        </div>
+                    </div>  
+                </div>
+            </article><!-- #post -->
+        <?php endwhile; // end of the loop.    ?>        
+    </div><!-- #content -->
+    <?php dynamic_sidebar('Newletter - bottom'); ?> 
+</div>
 <?php get_footer(); ?>

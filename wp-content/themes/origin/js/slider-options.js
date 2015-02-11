@@ -7,8 +7,8 @@ jQuery(window).load(function() {
     });
 });
 jQuery(document).ready(function(){
-    jQuery('#menu-cya-menu li a').click(function(){
-        jQuery('#menu-cya-menu li a').removeClass('menu-cya-menu-active');
+    jQuery('#navbar ul li a').hover(function(){
+        jQuery('#navbar ul li a').removeClass('menu-cya-menu-active');
         jQuery(this).addClass('menu-cya-menu-active');
     });
     
