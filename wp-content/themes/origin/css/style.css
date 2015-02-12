@@ -351,6 +351,22 @@ a {color: #c00c0c; text-decoration: none;}
     font-size: 12px;
     padding: 30px 0px;
 }
+#footer .menu-footer{
+
+}
+#footer .menu-footer ul{
+
+}
+#footer .menu-footer ul li{
+    float: left;
+    min-height: 50px;
+    line-height: 50px;
+    padding: 0px 10px;
+    color: #fff !important;
+}
+#footer .menu-footer ul li a{
+    color: #fff !important;
+}
 
 
 
@@ -631,6 +647,9 @@ h4{
         border-bottom: 11px solid #ff5a28;
         border-left: 11px solid transparent;
         color: #ff5a28;
+    }
+    .menu-cya-menu-active a{
+        color: #ff5a28 !important;
     }
 }
 

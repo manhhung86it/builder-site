@@ -25,17 +25,7 @@
                     <div class="services-body col-sm-4">                
                         <div class="services-icon">
                             <a href="<?php echo the_permalink(); ?>">
-                                <?php
-                                if (has_post_thumbnail()) {
-                                    $domsxe = simplexml_load_string(get_the_post_thumbnail());
-                                    $thumbnailsrc = $domsxe->attributes()->src;
-                                    echo '<img src="' . $thumbnailsrc . '">';
-                                } else {
-                                    ?>
-                                    <img src="<?php echo $default_thumb->get_image_src('thumbnail'); ?>">
-                                    <?php
-                                }
-                                ?>
+                                <img src="<?php echo the_field('imga'); ?>"> 
                             </a>
                         </div>
                         <div class="col-sm-9 services-page-content">

@@ -86,7 +86,7 @@ if (function_exists('register_sidebar')) {
         'before_title' => '<h3 class="widget-title">',
         'after_title' => '</h3>',
     ));
-    
+
     register_sidebar(array(
         'name' => __('about Sidebar - Top', 'pm'),
         'id' => 'sidebar-about',
@@ -108,6 +108,20 @@ if (function_exists('register_sidebar')) {
 }
 add_theme_support('post-thumbnails');
 add_theme_support('custom-header');
+
+// add class active to menu
+add_filter('nav_menu_css_class', 'special_nav_class', 10, 2);
+function special_nav_class($classes, $item) {
+    if (in_array('current-menu-item', $classes)) {
+        $classes[] = 'menu-cya-menu-active';
+    }
+    return $classes;
+}
+// add second menu
+register_nav_menus( array(
+    'primary' => __( 'Primary Menu', 'origin'),
+    'secondary' => __( 'Secondary Menu', 'origin' ),
+ ) );
 
 function wp_services_() {
     register_post_type(

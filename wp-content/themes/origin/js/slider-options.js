@@ -6,10 +6,10 @@ jQuery(window).load(function() {
         directionNav: true,
     });
 });
-jQuery(document).ready(function(){
-    jQuery('#navbar ul li a').hover(function(){
-        jQuery('#navbar ul li a').removeClass('menu-cya-menu-active');
-        jQuery(this).addClass('menu-cya-menu-active');
-    });
-    
-})
+//jQuery(document).ready(function(){
+//    jQuery('#navbar ul li a').hover(function(){
+//        jQuery('#navbar ul li a').removeClass('menu-cya-menu-active');
+//        jQuery(this).addClass('menu-cya-menu-active');
+//    });
+//    
+//})

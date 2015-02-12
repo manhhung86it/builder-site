@@ -1,6 +1,6 @@
 <div id="footer">    
     <div class="menu-footer group">
-        <?php wp_nav_menu(array('menu' => 'Page Menu', 'container' => '', 'menu_class' => 'nav navbar-nav')); ?>
+        <?php wp_nav_menu(array('menu' => 'menu-bottom','theme_location' => 'secondary', 'container' => '',)); ?>
     </div>
     <div class="footer-infor">
         &copy;© 2013 Soho Projects. All rights resevered. Designed by CYASOFT

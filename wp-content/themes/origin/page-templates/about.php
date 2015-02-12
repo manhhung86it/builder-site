@@ -3,7 +3,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-/* Template Name: Contact Page
+/* Template Name: about Page
  */
 ?>
 <?php get_header(); ?>
@@ -18,7 +18,7 @@
                 <div class="about group">
 
                     <div class="col-sm-4 col-xs-12 about-image">
-                        <img src="http://localhost/cya-wp/wp-content/themes/origin/images/about-icon.png">
+                        <?php  echo the_post_thumbnail(); ?>
                     </div>
                     <div class="col-sm-8 col-xs-12 about-content">
                         <div class="about-content-title">
