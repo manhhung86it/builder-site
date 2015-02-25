@@ -514,7 +514,9 @@ h4{
 .services-page-content{
     padding: 5px 5px;
 }
-.services-icon{
+.services-icon,
+.testimonial-icon,
+.supplier-icon{
     display: inline-block;
     float: left;
 }
@@ -522,8 +524,28 @@ h4{
     width: 50px;
     height: 50px;
 }
+.supplier-icon img{
+    width: 200px;
+    height: 100px;
+}
 .services-page-content h4{
     padding-bottom: 5px;
+}
+.supplier-page-content{
+    border-left: 2px solid #ebebeb;
+    padding-left: 10px;
+}
+.supplier-page-content h4{
+    padding-top: 10px;
+    display: inline-block;
+}
+.testimonial-title{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+.testimonial-title p{
+    font-size: 30px;
 }
 
 /* page services-detail */
@@ -752,7 +774,9 @@ h4{
     .btn-contact{
         text-align: center;
     }
-    .services-icon{
+    .services-icon,
+    .testimonial-icon,
+    .supplier-icon{
         width: 100%;
         text-align: center;
     }
