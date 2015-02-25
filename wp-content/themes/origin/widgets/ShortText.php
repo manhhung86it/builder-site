@@ -13,7 +13,7 @@ class WP_Short_Text extends WP_Widget {
     public function widget($args, $instance) {
         extract($args);
         ?>
-        <div class="col-sm-3 first-table">
+        <div class="col-sm-3 col-xs-8 first-table">
             <div class="first-table-title"><?php echo $instance['title'] ?></div>
             <div class="first-table-content"><?php echo $instance['content'] ?></div>
             <?php
