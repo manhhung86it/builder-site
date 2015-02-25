@@ -4,16 +4,17 @@
  * and open the template in the editor.
  * Template Name: Home Page
  */
-
-get_header();
 ?>
+
+<?php get_header(); ?>
+
 <div class="body">
     <div class="body-top">
         <?php dynamic_sidebar('Home Sidebar - Top'); ?> 
     </div>
+    <div class="body-middle">
+        <?php dynamic_sidebar('Home Sidebar - Middle'); ?> 
+    </div>
 </div>
-
-<?php dynamic_sidebar('Home Sidebar - Middle'); ?>   
-
 
 <?php get_footer(); ?>
