@@ -648,6 +648,15 @@ h4{
         border-left: 11px solid transparent;
         color: #ff5a28;
     }
+    .bottom-menu .menu-cya-menu-active:after{
+        content: "";
+        position: absolute;
+        top: 20px;
+        left: 0px;
+        border-bottom: none;
+        border-left: none;
+        color: #ff5a28;
+    }
     .menu-cya-menu-active a{
         color: #ff5a28 !important;
     }
