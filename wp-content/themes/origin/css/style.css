@@ -706,10 +706,26 @@ h4{
     }
     .-skin-default .-items .-item .itembox{
         width: 100% !important;
-    }
+    }    
 }
 
 @media only screen and (min-width: 960px) and (max-width: 1200px) {
+    .-columns2 .-items .-item .itembox > a > img{
+        height: 460px;
+    }
+    .-columns3 .-items .-item .itembox > a > img{
+        height: 320px;
+    }
+
+    .-columns4 .-items .-item .itembox > a > img{
+        height: 240px;
+    }
+    .-columns5 .-items .-item .itembox > a > img{
+        height: 192px;
+    }
+    .-columns6 .-items .-item .itembox > a > img{
+        height: 160px;
+    }
 }
 
 
@@ -732,6 +748,22 @@ h4{
     .input-update-short .input-group select, 
     .input-update-short .input-group select:focus{
         width: 83% !important;
+    }
+    .-columns2 .-items .-item .itembox > a > img{
+        height: 430px;
+    }
+    .-columns3 .-items .-item .itembox > a > img{
+        height: 286px;
+    }
+
+    .-columns4 .-items .-item .itembox > a > img{
+        height: 215px;
+    }
+    .-columns5 .-items .-item .itembox > a > img{
+        height: 172px;
+    }
+    .-columns6 .-items .-item .itembox > a > img{
+        height: 143px;
     }
 }
 
@@ -819,6 +851,22 @@ h4{
     .-skin-default .-items .-item .itembox{
         width: 100% !important;
     }
+    .-columns2 .-items .-item .itembox > a > img{
+        height: 312px;
+    }
+    .-columns3 .-items .-item .itembox > a > img{
+        height: 208px;
+    }
+
+    .-columns4 .-items .-item .itembox > a > img{
+        height: 156px;
+    }
+    .-columns5 .-items .-item .itembox > a > img{
+        height: 124px;
+    }
+    .-columns6 .-items .-item .itembox > a > img{
+        height: 104px;
+    }
 }
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
@@ -837,6 +885,13 @@ h4{
     }
     .form-body-bottom{
         width: 100%;
+    }
+    .-columns2 .-items .-item .itembox > a > img,
+    .-columns3 .-items .-item .itembox > a > img,
+    .-columns4 .-items .-item .itembox > a > img,
+    .-columns5 .-items .-item .itembox > a > img,
+    .-columns6 .-items .-item .itembox > a > img{
+        height: 480px;
     }
 }
 @media only screen and (min-width: 480px) and (max-width: 600px) {
