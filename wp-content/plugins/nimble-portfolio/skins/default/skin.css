@@ -38,12 +38,14 @@
     .-skin-default.-columns3 .-items .-item,
     .-skin-default.-columns4 .-items .-item,
     .-skin-default.-columns5 .-items .-item,
+    .-skin-default.-columns6 .-items .-item,
     .-skin-default .-items .-item {
         width: 98%;
     }
 
     .-skin-default.-columns4 .-items .-item .-links a ,
-    .-skin-default.-columns5 .-items .-item .-links a {
+    .-skin-default.-columns5 .-items .-item .-links a,
+    .-skin-default.-columns6 .-items .-item .-links a{
         font-size: 14px ;
     }
 }
@@ -163,12 +165,17 @@
 .-skin-default.-columns5 .-item{
     width: 18% ;
 }
-
+.-skin-default.-columns6 .-item{
+    width: 16% ;
+}
 .-skin-default.-columns4 .-item .-links a {
     font-size: 12px;
 }
 
 .-skin-default.-columns5 .-item .-links a {
+    font-size: 11px;
+}
+.-skin-default.-columns6 .-item .-links a {
     font-size: 11px;
 }
 
