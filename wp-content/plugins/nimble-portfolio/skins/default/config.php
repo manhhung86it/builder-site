@@ -24,7 +24,8 @@ $columns = array(
     '-columns2' => '2 Columns',
     '-columns3' => '3 Columns',
     '-columns4' => '4 Columns',
-    '-columns5' => '5 Columns'
+    '-columns5' => '5 Columns',
+    '-columns6' => '6 Columns'
 );
 ?>
 <div class="wrap">
