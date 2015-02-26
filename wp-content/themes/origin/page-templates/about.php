@@ -24,16 +24,8 @@
                         <div class="about-content-title">
                             <h1><?php the_title(); ?></h1>
                         </div>
-                        <div class="about-content-top">
+                        <div class="about-content-top about-content-bottom" id="about-content-top">
                             <?php the_content(); ?>
-                        </div>
-                        <div class="about-content-bottom">
-                            <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h3>
-                            <ul>
-                                <li><i class="fa fa-check"></i><span>Integer et augue nisi, sit amet molestie nisl. </span</li>
-                                <li><i class="fa fa-check"></i><span>Nam ullamcorper augue a purus congue in suscipit nunc molestie. </span</li>
-                                <li><i class="fa fa-check"></i><span>Integer iaculis mauris libero.</span</li>
-                            </ul>
                         </div>
                     </div>  
                 </div>

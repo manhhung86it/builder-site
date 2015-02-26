@@ -6,3 +6,6 @@ jQuery(window).load(function() {
         directionNav: true,
     });
 });
+jQuery(document).ready(function() {
+    jQuery("#about-content-top ul li span").before("<i class=\"fa fa-check\"></i>");
+});

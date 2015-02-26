@@ -24,7 +24,7 @@ class WP_Supplier extends WP_Widget {
                 <div class="services-content"> 
                     <ul class="group">';
             foreach ($posts as $post) {
-                $list_supplier .= '<li><a href="' . get_post_permalink($post->ID) . '" title="' . $post->post_title . '">'.get_the_post_thumbnail($post->ID, 'thumbnail').'</a></li>';
+                $list_supplier .= '<li>'.get_the_post_thumbnail($post->ID, 'thumbnail').'</li>';
             }
             $list_supplier .= '</ul>
                 <div class="services-content-button"><a href="#">More  >></a></div>

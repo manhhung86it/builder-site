@@ -71,7 +71,9 @@ h1, h2, h3, h4, h5 {}
 a img { border: 0; }
 a {color: #c00c0c; text-decoration: none;}
 .zoomer:active { top: 0; }
-
+#page-wrap{
+    min-width: 480px;
+}
 
 /* header */
 .navbar-cya{
@@ -441,6 +443,9 @@ h4{
     padding-left: 10px;
     font-size: 13px;
 }
+.about-content-top h3{
+    padding-top: 20px !important; 
+}
 
 /* contact */
 .input-update{
@@ -646,6 +651,7 @@ h4{
     color: #ffa78c;
 }
 .-skin-default .-items .-item .itembox{
+    width: 100% !important;
     border: none !important;
     box-shadow: none !important;
 }
@@ -657,6 +663,9 @@ h4{
 }
 
 @media only screen and (min-width: 1200px) {
+    .-skin-default .-items .-item{
+        width: 16% !important;
+    }
 }
 @media only screen and (min-width: 768px) {
     .second-table{
@@ -697,6 +706,9 @@ h4{
 }
 
 @media only screen and (min-width: 960px) and (max-width: 1200px) {
+    .-skin-default .-items .-item{
+        width: 16% !important;
+    }
 }
 
 
