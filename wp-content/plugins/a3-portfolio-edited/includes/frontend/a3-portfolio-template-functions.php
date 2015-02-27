@@ -364,12 +364,12 @@ function a3_portfolio_card_get_first_thumb_image( $portfolio_id = 0, $gallery = 
 	if ( $gallery ) {
 		$thumb_url = wp_get_attachment_image_src( $gallery[0], 'a3-portfolio', true );
 		if ( $thumb_url && $thumb_url[0] != '' ) {
-			$main_thumb_image = '<img class="a3-portfolio-thumb-lazy attachment-a3-portfolio wp-post-image" src="'.$_blank.'" data-original="'.$thumb_url[0].'" />';
+			$main_thumb_image = '<img class="a3-portfolio-thumb-lazy attachment-a3-portfolio wp-post-image" src="'.$thumb_url[0].'" />';
 		}
 	}
 
 	if ( trim( $main_thumb_image ) == '' ) {
-		$main_thumb_image = '<img class="a3-portfolio-thumb-lazy no-thumb" src="'.$_blank.'" data-original="' . a3_portfolio_no_image() . '" />';
+		$main_thumb_image = '<img class="a3-portfolio-thumb-lazy no-thumb" src="' . a3_portfolio_no_image() . '" />';
 	}
 
 	$main_thumb_image = apply_filters( 'a3_portfolio_card_get_first_thumb_image', $main_thumb_image, $portfolio_id );

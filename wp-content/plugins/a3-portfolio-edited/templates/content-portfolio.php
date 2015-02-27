@@ -28,7 +28,7 @@ $portfolio_gallery = a3_portfolio_get_gallery( $portfolio_id );
 
 	<div class="a3-portfolio-item-container">
 
-		<a class="a3-portfolio-item-block" href="#">
+		<a class="a3-portfolio-item-block" href="<?php the_permalink(); ?>">
 
 			<?php do_action( 'a3_portfolio_before_loop_item_card', $portfolio_id ); ?>
 

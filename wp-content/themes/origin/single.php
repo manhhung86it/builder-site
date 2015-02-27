@@ -1,31 +1,35 @@
 <?php get_header(); ?>
+<div class="body">
 
-	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-		<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
-			
-			<h2><?php the_title(); ?></h2>
-			
-			<?php include (TEMPLATEPATH . '/inc/meta.php' ); ?>
 
-			<div class="entry">
-				
-				<?php the_content(); ?>
+            <div class="about-body">
+                <div class="about-title">
+                    <h1 class="border-left"><?php the_title(); ?></h1>
+                </div>
+            </div>
 
-				<?php wp_link_pages(array('before' => 'Pages: ', 'next_or_number' => 'number')); ?>
-				
-				<?php the_tags( 'Tags: ', ', ', ''); ?>
+                    <!--<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
 
-			</div>
-			
-			<?php edit_post_link('Edit this entry','','.'); ?>
-			
-		</div>
+                        <h2><?php the_title(); ?></h2>
 
-	<?php comments_template(); ?>
+                        <div class="entry">
 
-	<?php endwhile; endif; ?>
-	
-<?php get_sidebar(); ?>
+            <?php the_content(); ?>
+
+                        </div>
+
+            <?php edit_post_link('Edit this entry', '', '.'); ?>
+
+                    </div>-->
+
+
+            <?php
+        endwhile;
+    endif;
+    ?>
+    <?php dynamic_sidebar('Newletter - bottom'); ?> 
+</div>
 
 <?php get_footer(); ?>
