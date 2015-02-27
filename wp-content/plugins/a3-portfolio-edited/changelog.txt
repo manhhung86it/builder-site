@@ -1,0 +1,37 @@
+=== Changelog ===
+
+= 1.0.4 - 2015/01/28 =
+* Tweak - Add New Release a3 Portfolio Dynamic Stylesheet Add-On plugin Card to the Add-Ons menu
+* Tweak - Added an image to the a3 Portfolio Isotope Add-On Card on the Add-Ons menu
+
+= 1.0.3 - 2015/01/26 =
+* Tweak - Update background of portfolio mobile control to be the same background color of item expander.
+* Dev - Defined 'a3_portfolio_cards_title_class' filter tag. Developers can filter to add new class name for Card Title on Card Layout
+* Dev - Defined 'a3_portfolio_backend_launch_button_text' filter tag. Developers can filter to change Launch button text that shows inside the item Expander
+* Fix - Change <code>parameter == undefined</code> to <code>typeof parameter === 'undefined'</code> inside portfolio script to fix JavaScript undefined parameter error
+
+= 1.0.2 - 2015/01/12 =
+* Fix - Fatal Error on first install on some installs. Hook the 'set_default_settings' function into 'init' action instead hook into 'register_activation_hook'
+* Fix - Item main image caption not showing. Updated if <code>( ! is_array( $gallery ) )</code> to <code>if ( is_array( $gallery ) )</code>
+* Credit - Thanks to wordpress.org memeber [jmdev](https://wordpress.org/support/profile/jmdev) for reporting the issue.
+
+= 1.0.1 - 2015/01/05 =
+* Feature - Add a3 Portfolio Isotope Add-On Free plugin download from the Add-On's menu
+* Tweak - Updated the plugins description with details about the Isotope Add-On plugin.
+* Tweak - Link from the Isotope Add-On plugin to http://a3rev.com/my-account/free-downloads/
+* Tweak - Add Registration and Login features to the /free-downloads/ page
+* Tweak - Add License agreement for first download of a3 Portfolio Isotope plugin
+* Tweak - Added effect mouse over on the card for Add-On page
+* Tweak - Remove custom colour for Add-On submenu title.
+* Dev - Hooked framework code into 'plugins_loaded' action. Allows developers to add their child plugin admin menu as a a3 Portfolio sub menu
+* Dev - Defined 'a3_portfolio_before_portfolio_enqueue_styles' action tag.
+* Dev - Defined 'a3_portfolio_after_portfolio_enqueue_styles' action tag.
+* Dev - Defined 'a3_portfolio_before_portfolio_enqueue_styles_rtl' action tag.
+* Dev - Defined 'a3_portfolio_after_portfolio_enqueue_styles_rtl' action tag.
+* Dev - Defined 'a3_portfolio_before_single_enqueue_styles' action tag.
+* Dev - Defined 'a3_portfolio_after_single_enqueue_styles' action tag.
+* Dev - Defined 'a3_portfolio_before_single_enqueue_styles_rtl' action tag.
+* Dev - Defined 'a3_portfolio_after_single_enqueue_styles_rtl' action tag.
+
+= 1.0.0 - 2014/12/16 =
+* First release.

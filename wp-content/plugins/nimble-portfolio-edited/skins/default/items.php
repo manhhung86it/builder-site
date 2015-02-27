@@ -10,6 +10,9 @@ $skin_cols = $skin_options['column-type'];
 $hover_icon = $skin_options['hover-icon'] ? $skin_options['hover-icon'] : 'zoom';
 $items = $this->getItems();
 foreach ($items as $item) {
+    echo '<pre>';
+    var_dump($item->getFilters($this->taxonomy));
+    echo '</pre>';
     $item_atts = array();
     $item_atts['class'] = $item->getFilters($this->taxonomy);
     $item_atts['class'][] = "-item";
