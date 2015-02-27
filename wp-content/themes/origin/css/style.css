@@ -631,7 +631,7 @@ h4{
 .gallery-top .about-top-content{
     top: 20px;
 }
-#filter-2{
+/*#filter-2{
     display: none;
 }
 .-item .title{
@@ -665,8 +665,57 @@ h4{
 }
 .-skin-default .-items .-item .itembox > a > img{
     height: 173px;
+}*/
+.a3-portfolio-menus-container ul.filter li a{
+    background-color: #fff !important;
+    color: #000 !important;
+    font-weight: normal !important;
+    font-size: 16px !important;
 }
+.a3-portfolio-menus-container ul.filter li a.active{
+    background: #fff !important;
+    color: #ffa78c !important;
+}
+.a3-portfolio-item-load{
+    margin-right: 0% !important;
+    margin-bottom: 0px !important;
+}
+.about .a3-portfolio-item-container .a3-portfolio-card-overlay{
+    padding: 0% 0%;
+    background-color: #000;
+    opacity: 0.75;
+}
+.a3-portfolio-box-content  .a3-portfolio-item .a3-portfolio-item-container .a3-portfolio-card-overlay .genericon{
+    font-size: 48px;
+    text-align: center;
+    left: 38%;
+    top: 40%;
+    width: 48px;
+    height: 48px;
+    color: #fff;
+    opacity: 1;
+    position: absolute;
+}
+
 @media only screen and (min-width: 1200px) {
+    .a3-portfolio-box-content.a3-portfolio-box-content-col6 .a3-portfolio-item .a3-portfolio-item-container img{
+        height: 160px;
+    }
+    .a3-portfolio-box-content.a3-portfolio-box-content-col5 .a3-portfolio-item .a3-portfolio-item-container img{
+        height: 192px;
+    }
+    .a3-portfolio-box-content.a3-portfolio-box-content-col4 .a3-portfolio-item .a3-portfolio-item-container img{
+        height: 240px;
+    }
+    .a3-portfolio-box-content.a3-portfolio-box-content-col3 .a3-portfolio-item .a3-portfolio-item-container img{
+        height: 320px;
+    }
+    .a3-portfolio-box-content.a3-portfolio-box-content-col2 .a3-portfolio-item .a3-portfolio-item-container img{
+        height: 460px;
+    }
+    .a3-portfolio-box-content.a3-portfolio-box-content-col1 .a3-portfolio-item .a3-portfolio-item-container img{
+        height: 920px;
+    }
 }
 @media only screen and (min-width: 768px) {
     .second-table{
@@ -707,24 +756,60 @@ h4{
     .-skin-default .-items .-item .itembox{
         width: 100% !important;
     }    
+    .a3-portfolio-box-content.a3-portfolio-box-content-col6 .a3-portfolio-item{
+        width: 16.6% !important;
+    }
+    .a3-portfolio-box-content.a3-portfolio-box-content-col5 .a3-portfolio-item{
+        width: 20% !important;
+    }
+    .a3-portfolio-box-content.a3-portfolio-box-content-col4 .a3-portfolio-item{
+        width: 25% !important;
+    }
+    .a3-portfolio-box-content.a3-portfolio-box-content-col3 .a3-portfolio-item{
+        width: 33.33% !important;
+    }
+    .a3-portfolio-box-content.a3-portfolio-box-content-col2 .a3-portfolio-item{
+        width: 50% !important;
+    }
+    .a3-portfolio-box-content.a3-portfolio-box-content-col2 .a3-portfolio-item{
+        width: 100% !important;
+    }
 }
 
 @media only screen and (min-width: 960px) and (max-width: 1200px) {
-    .-columns2 .-items .-item .itembox > a > img{
-        height: 460px;
+    /*    .-columns2 .-items .-item .itembox > a > img{
+            height: 460px;
+        }
+        .-columns3 .-items .-item .itembox > a > img{
+            height: 320px;
+        }
+    
+        .-columns4 .-items .-item .itembox > a > img{
+            height: 240px;
+        }
+        .-columns5 .-items .-item .itembox > a > img{
+            height: 192px;
+        }
+        .-columns6 .-items .-item .itembox > a > img{
+            height: 160px;
+        }*/
+    .a3-portfolio-box-content.a3-portfolio-box-content-col6 .a3-portfolio-item .a3-portfolio-item-container img{
+        height: 160px;
     }
-    .-columns3 .-items .-item .itembox > a > img{
-        height: 320px;
-    }
-
-    .-columns4 .-items .-item .itembox > a > img{
-        height: 240px;
-    }
-    .-columns5 .-items .-item .itembox > a > img{
+    .a3-portfolio-box-content.a3-portfolio-box-content-col5 .a3-portfolio-item .a3-portfolio-item-container img{
         height: 192px;
     }
-    .-columns6 .-items .-item .itembox > a > img{
-        height: 160px;
+    .a3-portfolio-box-content.a3-portfolio-box-content-col4 .a3-portfolio-item .a3-portfolio-item-container img{
+        height: 240px;
+    }
+    .a3-portfolio-box-content.a3-portfolio-box-content-col3 .a3-portfolio-item .a3-portfolio-item-container img{
+        height: 320px;
+    }
+    .a3-portfolio-box-content.a3-portfolio-box-content-col2 .a3-portfolio-item .a3-portfolio-item-container img{
+        height: 460px;
+    }
+    .a3-portfolio-box-content.a3-portfolio-box-content-col1 .a3-portfolio-item .a3-portfolio-item-container img{
+        height: 920px;
     }
 }
 
@@ -749,21 +834,39 @@ h4{
     .input-update-short .input-group select:focus{
         width: 83% !important;
     }
-    .-columns2 .-items .-item .itembox > a > img{
-        height: 430px;
+    /*    .-columns2 .-items .-item .itembox > a > img{
+            height: 430px;
+        }
+        .-columns3 .-items .-item .itembox > a > img{
+            height: 286px;
+        }
+    
+        .-columns4 .-items .-item .itembox > a > img{
+            height: 215px;
+        }
+        .-columns5 .-items .-item .itembox > a > img{
+            height: 172px;
+        }
+        .-columns6 .-items .-item .itembox > a > img{
+            height: 143px;
+        }*/
+    .a3-portfolio-box-content.a3-portfolio-box-content-col6 .a3-portfolio-item .a3-portfolio-item-container img{
+        height: 143px;
     }
-    .-columns3 .-items .-item .itembox > a > img{
-        height: 286px;
-    }
-
-    .-columns4 .-items .-item .itembox > a > img{
-        height: 215px;
-    }
-    .-columns5 .-items .-item .itembox > a > img{
+    .a3-portfolio-box-content.a3-portfolio-box-content-col5 .a3-portfolio-item .a3-portfolio-item-container img{
         height: 172px;
     }
-    .-columns6 .-items .-item .itembox > a > img{
-        height: 143px;
+    .a3-portfolio-box-content.a3-portfolio-box-content-col4 .a3-portfolio-item .a3-portfolio-item-container img{
+        height: 215px;
+    }
+    .a3-portfolio-box-content.a3-portfolio-box-content-col3 .a3-portfolio-item .a3-portfolio-item-container img{
+        height: 286px;
+    }
+    .a3-portfolio-box-content.a3-portfolio-box-content-col2 .a3-portfolio-item .a3-portfolio-item-container img{
+        height: 430px;
+    }
+    .a3-portfolio-box-content.a3-portfolio-box-content-col1 .a3-portfolio-item .a3-portfolio-item-container img{
+        height: 863px;
     }
 }
 
@@ -843,29 +946,40 @@ h4{
     .gallery-top .about-top-content{
         top: 100px;
     }
+    .a3-portfolio-box-content.a3-portfolio-box-content-col6 .a3-portfolio-item .a3-portfolio-item-container img,
+    .a3-portfolio-box-content.a3-portfolio-box-content-col5 .a3-portfolio-item .a3-portfolio-item-container img,
+    .a3-portfolio-box-content.a3-portfolio-box-content-col4 .a3-portfolio-item .a3-portfolio-item-container img,
+    .a3-portfolio-box-content.a3-portfolio-box-content-col3 .a3-portfolio-item .a3-portfolio-item-container img,
+    .a3-portfolio-box-content.a3-portfolio-box-content-col2 .a3-portfolio-item .a3-portfolio-item-container img,
+    .a3-portfolio-box-content.a3-portfolio-box-content-col1 .a3-portfolio-item .a3-portfolio-item-container img{
+        height: 384px;
+    }
 
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-    .-skin-default .-items .-item .itembox{
-        width: 100% !important;
-    }
-    .-columns2 .-items .-item .itembox > a > img{
-        height: 312px;
-    }
-    .-columns3 .-items .-item .itembox > a > img{
-        height: 208px;
-    }
-
-    .-columns4 .-items .-item .itembox > a > img{
-        height: 156px;
-    }
-    .-columns5 .-items .-item .itembox > a > img{
-        height: 124px;
-    }
-    .-columns6 .-items .-item .itembox > a > img{
-        height: 104px;
+@media only screen and (min-width: 379px) and (max-width: 767px) {
+    /*    .-skin-default .-items .-item .itembox{
+            width: 100% !important;
+        }
+        .-columns2 .-items .-item .itembox > a > img{
+            height: 312px;
+        }
+        .-columns3 .-items .-item .itembox > a > img{
+            height: 208px;
+        }
+    
+        .-columns4 .-items .-item .itembox > a > img{
+            height: 156px;
+        }
+        .-columns5 .-items .-item .itembox > a > img{
+            height: 124px;
+        }
+        .-columns6 .-items .-item .itembox > a > img{
+            height: 104px;
+        }*/
+    .about .a3-portfolio-box-content .a3-portfolio-item{
+        width: 50% !important;   
     }
 }
 
@@ -895,4 +1009,12 @@ h4{
     }
 }
 @media only screen and (min-width: 480px) and (max-width: 600px) {
+    .a3-portfolio-box-content.a3-portfolio-box-content-col6 .a3-portfolio-item .a3-portfolio-item-container img,
+    .a3-portfolio-box-content.a3-portfolio-box-content-col5 .a3-portfolio-item .a3-portfolio-item-container img,
+    .a3-portfolio-box-content.a3-portfolio-box-content-col4 .a3-portfolio-item .a3-portfolio-item-container img,
+    .a3-portfolio-box-content.a3-portfolio-box-content-col3 .a3-portfolio-item .a3-portfolio-item-container img,
+    .a3-portfolio-box-content.a3-portfolio-box-content-col2 .a3-portfolio-item .a3-portfolio-item-container img,
+    .a3-portfolio-box-content.a3-portfolio-box-content-col1 .a3-portfolio-item .a3-portfolio-item-container img{
+        height: 270px;
+    }
 }
