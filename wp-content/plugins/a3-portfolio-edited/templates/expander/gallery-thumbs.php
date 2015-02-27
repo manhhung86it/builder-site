@@ -51,6 +51,7 @@ $number_columns = a3_portfolio_get_col_per_row();
 
 	<div class="pg_grid <?php echo $active_class; ?> <?php echo $class; ?>" id="<?php echo esc_attr( $attachment_id ); ?>">
             <img class="a3-portfolio-thumb-lazy attachment-a3-portfolio wp-post-image" src="<?php echo $thumb_full_url[0]; ?>">
+            <div class="a3-portfolio-single-card-overlay"><div class="genericon genericon-search"></div></div>
         </div>
 
 <?php endforeach; ?>

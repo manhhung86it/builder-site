@@ -709,6 +709,41 @@ body .about-body div.single-a3-portfolio-181 .a3-portfolio-item-content-containe
 body .about-body .a3-portfolio-item-container:hover .a3-portfolio-card-overlay{
     /*display: none !important;*/
 }
+body .about-body .a3-portfolio-gallery-thumbs-container .pg_grid.first, 
+body .about-body .a3-portfolio-gallery-thumbs-container .pg_grid.last{
+    margin-right: 0px !important;
+}
+.a3-portfolio-single-card-overlay{
+    background-color: #000;
+    opacity: 0.75;
+    text-align: left;
+    display: none;
+    height: 100%;
+    position: absolute;
+    text-decoration: none;
+    width: 100%;
+    z-index: 100;
+    filter: alpha(opacity=@opacity * 100);
+    -moz-opacity: 0.8;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+}
+.a3-portfolio-single-card-overlay .genericon{
+    font-size: 48px;
+    text-align: center;
+    left: 38%;
+    top: 40%;
+    width: 48px;
+    height: 48px;
+    color: #fff;
+    opacity: 1;
+    position: absolute;
+}
+body .about-body .a3-portfolio-gallery-thumbs-container .pg_grid:hover .a3-portfolio-single-card-overlay{
+    display: block !important;
+}
 
 @media only screen and (min-width: 1200px) {
     .a3-portfolio-box-content.a3-portfolio-box-content-col6 .a3-portfolio-item .a3-portfolio-item-container img,
