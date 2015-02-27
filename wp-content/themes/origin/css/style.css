@@ -631,41 +631,6 @@ h4{
 .gallery-top .about-top-content{
     top: 20px;
 }
-/*#filter-2{
-    display: none;
-}
-.-item .title{
-    display: none;
-}
-.-filters{
-    text-align: center;
-    padding-bottom: 50px;
-}
-.-filters a{
-    border: none !important;
-    font-size: 16px;
-    color: #000;
-}
-.-skin-default .-filters .-filter.active{
-    background: #fff;
-    color: #ffa78c;
-}
-.-skin-default .-items .-item .itembox{
-    border: none !important;
-    box-shadow: none !important;
-}
-.-skin-default .-items .-item{
-    margin: 0px !important;
-}
-.pp_gallery{
-    display: none !important;
-}
-.-skin-default .-items .-item .-links .-link{
-    padding: 0% 0 !important;
-}
-.-skin-default .-items .-item .itembox > a > img{
-    height: 173px;
-}*/
 .a3-portfolio-menus-container ul.filter li a{
     background-color: #fff !important;
     color: #000 !important;
@@ -741,28 +706,34 @@ body .about-body div.single-a3-portfolio-181 .a3-portfolio-item-content-containe
 body .about-body div.single-a3-portfolio-181 .a3-portfolio-item-content-container .a3-portfolio-gallery-thumbs-container .pg_grid{
     width: 28%;
 }
+body .about-body .a3-portfolio-item-container:hover .a3-portfolio-card-overlay{
+    /*display: none !important;*/
+}
 
 @media only screen and (min-width: 1200px) {
-    .a3-portfolio-box-content.a3-portfolio-box-content-col6 .a3-portfolio-item .a3-portfolio-item-container img{
-        height: 160px;
+    .a3-portfolio-box-content.a3-portfolio-box-content-col6 .a3-portfolio-item .a3-portfolio-item-container img,
+    body .about-body .a3-portfolio-item-content-container .a3-portfolio-box-content-col6 .pg_grid img{
+        height: 160px !important;
     }
-    .a3-portfolio-box-content.a3-portfolio-box-content-col5 .a3-portfolio-item .a3-portfolio-item-container img{
-        height: 192px;
+    .a3-portfolio-box-content.a3-portfolio-box-content-col5 .a3-portfolio-item .a3-portfolio-item-container img,
+    body .about-body .a3-portfolio-item-content-container .a3-portfolio-box-content-col5 .pg_grid img{
+        height: 192px !important;
     }
-    .a3-portfolio-box-content.a3-portfolio-box-content-col4 .a3-portfolio-item .a3-portfolio-item-container img{
-        height: 240px;
+    .a3-portfolio-box-content.a3-portfolio-box-content-col4 .a3-portfolio-item .a3-portfolio-item-container img,
+    body .about-body .a3-portfolio-item-content-container .a3-portfolio-box-content-col4 .pg_grid img{ 
+        height: 240px !important;
     }
-    .a3-portfolio-box-content.a3-portfolio-box-content-col3 .a3-portfolio-item .a3-portfolio-item-container img{
-        height: 320px;
+    .a3-portfolio-box-content.a3-portfolio-box-content-col3 .a3-portfolio-item .a3-portfolio-item-container img,
+    body .about-body .a3-portfolio-item-content-container .a3-portfolio-box-content-col3 .pg_grid img{
+        height: 320px !important;
     }
-    .a3-portfolio-box-content.a3-portfolio-box-content-col2 .a3-portfolio-item .a3-portfolio-item-container img{
-        height: 460px;
+    .a3-portfolio-box-content.a3-portfolio-box-content-col2 .a3-portfolio-item .a3-portfolio-item-container img,
+    body .about-body .a3-portfolio-item-content-container .a3-portfolio-box-content-col2 .pg_grid img{
+        height: 460px !important;
     }
-    .a3-portfolio-box-content.a3-portfolio-box-content-col1 .a3-portfolio-item .a3-portfolio-item-container img{
-        height: 920px;
-    }
-    body .about-body  .a3-portfolio-item-content-container .a3-portfolio-gallery-thumbs-container .pg_grid img{
-        height: 250px !important;
+    .a3-portfolio-box-content.a3-portfolio-box-content-col1 .a3-portfolio-item .a3-portfolio-item-container img,
+    body .about-body .a3-portfolio-item-content-container .a3-portfolio-box-content-col1 .pg_grid img{
+        height: 920px !important;
     }
 }
 @media only screen and (min-width: 768px) {
@@ -804,70 +775,59 @@ body .about-body div.single-a3-portfolio-181 .a3-portfolio-item-content-containe
     .-skin-default .-items .-item .itembox{
         width: 100% !important;
     }    
-    .a3-portfolio-box-content.a3-portfolio-box-content-col6 .a3-portfolio-item{
+    .a3-portfolio-box-content.a3-portfolio-box-content-col6 .a3-portfolio-item,
+    body .about-body .a3-portfolio-item-content-container .a3-portfolio-box-content-col6 .pg_grid{
         width: 16.6% !important;
     }
-    .a3-portfolio-box-content.a3-portfolio-box-content-col5 .a3-portfolio-item{
+    .a3-portfolio-box-content.a3-portfolio-box-content-col5 .a3-portfolio-item,
+    body .about-body .a3-portfolio-item-content-container .a3-portfolio-box-content-col5 .pg_grid{
         width: 20% !important;
     }
-    .a3-portfolio-box-content.a3-portfolio-box-content-col4 .a3-portfolio-item{
+    .a3-portfolio-box-content.a3-portfolio-box-content-col4 .a3-portfolio-item,
+    body .about-body .a3-portfolio-item-content-container .a3-portfolio-box-content-col4 .pg_grid{
         width: 25% !important;
     }
-    .a3-portfolio-box-content.a3-portfolio-box-content-col3 .a3-portfolio-item{
+    .a3-portfolio-box-content.a3-portfolio-box-content-col3 .a3-portfolio-item,
+    body .about-body .a3-portfolio-item-content-container .a3-portfolio-box-content-col3 .pg_grid{
         width: 33.33% !important;
     }
-    .a3-portfolio-box-content.a3-portfolio-box-content-col2 .a3-portfolio-item{
+    .a3-portfolio-box-content.a3-portfolio-box-content-col2 .a3-portfolio-item,
+    body .about-body .a3-portfolio-item-content-container .a3-portfolio-box-content-col2 .pg_grid{
         width: 50% !important;
     }
-    .a3-portfolio-box-content.a3-portfolio-box-content-col2 .a3-portfolio-item{
+    .a3-portfolio-box-content.a3-portfolio-box-content-col2 .a3-portfolio-item,
+    body .about-body .a3-portfolio-item-content-container .a3-portfolio-box-content-col1 .pg_grid{
         width: 100% !important;
     }
     body .about-body  .a3-portfolio-item-content-container{
         width: 100% !important;
     }
-    body .about-body  .a3-portfolio-item-content-container .a3-portfolio-gallery-thumbs-container .pg_grid{
-        width: 28% !important;
-        margin: 0px !important;
-    }
 }
 
 @media only screen and (min-width: 960px) and (max-width: 1200px) {
-    /*    .-columns2 .-items .-item .itembox > a > img{
-            height: 460px;
-        }
-        .-columns3 .-items .-item .itembox > a > img{
-            height: 320px;
-        }
-    
-        .-columns4 .-items .-item .itembox > a > img{
-            height: 240px;
-        }
-        .-columns5 .-items .-item .itembox > a > img{
-            height: 192px;
-        }
-        .-columns6 .-items .-item .itembox > a > img{
-            height: 160px;
-        }*/
-    .a3-portfolio-box-content.a3-portfolio-box-content-col6 .a3-portfolio-item .a3-portfolio-item-container img{
-        height: 160px;
+    .a3-portfolio-box-content.a3-portfolio-box-content-col6 .a3-portfolio-item .a3-portfolio-item-container img,
+    body .about-body .a3-portfolio-item-content-container .a3-portfolio-box-content-col6 .pg_grid img{
+        height: 160px !important;
     }
-    .a3-portfolio-box-content.a3-portfolio-box-content-col5 .a3-portfolio-item .a3-portfolio-item-container img{
-        height: 192px;
+    .a3-portfolio-box-content.a3-portfolio-box-content-col5 .a3-portfolio-item .a3-portfolio-item-container img,
+    body .about-body .a3-portfolio-item-content-container .a3-portfolio-box-content-col5 .pg_grid img{
+        height: 192px !important;
     }
-    .a3-portfolio-box-content.a3-portfolio-box-content-col4 .a3-portfolio-item .a3-portfolio-item-container img{
-        height: 240px;
+    .a3-portfolio-box-content.a3-portfolio-box-content-col4 .a3-portfolio-item .a3-portfolio-item-container img,
+    body .about-body .a3-portfolio-item-content-container .a3-portfolio-box-content-col4 .pg_grid img{
+        height: 240px !important;
     }
-    .a3-portfolio-box-content.a3-portfolio-box-content-col3 .a3-portfolio-item .a3-portfolio-item-container img{
-        height: 320px;
+    .a3-portfolio-box-content.a3-portfolio-box-content-col3 .a3-portfolio-item .a3-portfolio-item-container img,
+    body .about-body .a3-portfolio-item-content-container .a3-portfolio-box-content-col3 .pg_grid img{
+        height: 320px !important;
     }
-    .a3-portfolio-box-content.a3-portfolio-box-content-col2 .a3-portfolio-item .a3-portfolio-item-container img{
-        height: 460px;
+    .a3-portfolio-box-content.a3-portfolio-box-content-col2 .a3-portfolio-item .a3-portfolio-item-container img,
+    body .about-body .a3-portfolio-item-content-container .a3-portfolio-box-content-col2 .pg_grid img{
+        height: 460px !important;
     }
-    .a3-portfolio-box-content.a3-portfolio-box-content-col1 .a3-portfolio-item .a3-portfolio-item-container img{
-        height: 920px;
-    }
-    body .about-body  .a3-portfolio-item-content-container .a3-portfolio-gallery-thumbs-container .pg_grid img{
-        height: 250px !important;
+    .a3-portfolio-box-content.a3-portfolio-box-content-col1 .a3-portfolio-item .a3-portfolio-item-container img,
+    body .about-body .a3-portfolio-item-content-container .a3-portfolio-box-content-col1 .pg_grid img{
+        height: 920px !important;
     }
 }
 
@@ -892,42 +852,29 @@ body .about-body div.single-a3-portfolio-181 .a3-portfolio-item-content-containe
     .input-update-short .input-group select:focus{
         width: 83% !important;
     }
-    /*    .-columns2 .-items .-item .itembox > a > img{
-            height: 430px;
-        }
-        .-columns3 .-items .-item .itembox > a > img{
-            height: 286px;
-        }
-    
-        .-columns4 .-items .-item .itembox > a > img{
-            height: 215px;
-        }
-        .-columns5 .-items .-item .itembox > a > img{
-            height: 172px;
-        }
-        .-columns6 .-items .-item .itembox > a > img{
-            height: 143px;
-        }*/
-    .a3-portfolio-box-content.a3-portfolio-box-content-col6 .a3-portfolio-item .a3-portfolio-item-container img{
-        height: 143px;
+    .a3-portfolio-box-content.a3-portfolio-box-content-col6 .a3-portfolio-item .a3-portfolio-item-container img,
+    body .about-body .a3-portfolio-item-content-container .a3-portfolio-box-content-col6 .pg_grid img{
+        height: 143px !important;
     }
-    .a3-portfolio-box-content.a3-portfolio-box-content-col5 .a3-portfolio-item .a3-portfolio-item-container img{
-        height: 172px;
+    .a3-portfolio-box-content.a3-portfolio-box-content-col5 .a3-portfolio-item .a3-portfolio-item-container img,
+    body .about-body .a3-portfolio-item-content-container .a3-portfolio-box-content-col5 .pg_grid img{
+        height: 172px !important;
     }
-    .a3-portfolio-box-content.a3-portfolio-box-content-col4 .a3-portfolio-item .a3-portfolio-item-container img{
-        height: 215px;
+    .a3-portfolio-box-content.a3-portfolio-box-content-col4 .a3-portfolio-item .a3-portfolio-item-container img,
+    body .about-body .a3-portfolio-item-content-container .a3-portfolio-box-content-col4 .pg_grid img{
+        height: 215px !important;
     }
-    .a3-portfolio-box-content.a3-portfolio-box-content-col3 .a3-portfolio-item .a3-portfolio-item-container img{
-        height: 286px;
+    .a3-portfolio-box-content.a3-portfolio-box-content-col3 .a3-portfolio-item .a3-portfolio-item-container img,
+    body .about-body .a3-portfolio-item-content-container .a3-portfolio-box-content-col3 .pg_grid img{
+        height: 286px !important;
     }
-    .a3-portfolio-box-content.a3-portfolio-box-content-col2 .a3-portfolio-item .a3-portfolio-item-container img{
-        height: 430px;
+    .a3-portfolio-box-content.a3-portfolio-box-content-col2 .a3-portfolio-item .a3-portfolio-item-container img,
+    body .about-body .a3-portfolio-item-content-container .a3-portfolio-box-content-col2 .pg_grid img{
+        height: 430px !important;
     }
-    .a3-portfolio-box-content.a3-portfolio-box-content-col1 .a3-portfolio-item .a3-portfolio-item-container img{
-        height: 863px;
-    }
-    body .about-body  .a3-portfolio-item-content-container .a3-portfolio-gallery-thumbs-container .pg_grid img{
-        height: 232px !important;
+    .a3-portfolio-box-content.a3-portfolio-box-content-col1 .a3-portfolio-item .a3-portfolio-item-container img,
+    body .about-body .a3-portfolio-item-content-container .a3-portfolio-box-content-col1 .pg_grid img{
+        height: 863px !important;
     }
 }
 
@@ -1022,7 +969,7 @@ body .about-body div.single-a3-portfolio-181 .a3-portfolio-item-content-containe
         width: 50% !important;
         margin: 0px !important;
     }
-    body .about-body  .a3-portfolio-item-content-container .a3-portfolio-gallery-thumbs-container .pg_grid img{
+    body .about-body .a3-portfolio-item-content-container .a3-portfolio-gallery-thumbs-container .pg_grid img{
         height: 232px !important;
     }
 
@@ -1030,25 +977,6 @@ body .about-body div.single-a3-portfolio-181 .a3-portfolio-item-content-containe
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 379px) and (max-width: 767px) {
-    /*    .-skin-default .-items .-item .itembox{
-            width: 100% !important;
-        }
-        .-columns2 .-items .-item .itembox > a > img{
-            height: 312px;
-        }
-        .-columns3 .-items .-item .itembox > a > img{
-            height: 208px;
-        }
-    
-        .-columns4 .-items .-item .itembox > a > img{
-            height: 156px;
-        }
-        .-columns5 .-items .-item .itembox > a > img{
-            height: 124px;
-        }
-        .-columns6 .-items .-item .itembox > a > img{
-            height: 104px;
-        }*/
     .about .a3-portfolio-box-content .a3-portfolio-item{
         width: 50% !important;   
     }
@@ -1088,7 +1016,7 @@ body .about-body div.single-a3-portfolio-181 .a3-portfolio-item-content-containe
     .a3-portfolio-box-content.a3-portfolio-box-content-col1 .a3-portfolio-item .a3-portfolio-item-container img{
         height: 270px;
     }
-    body .about-body  .a3-portfolio-item-content-container .a3-portfolio-gallery-thumbs-container .pg_grid img{
+    body .about-body .a3-portfolio-item-content-container .a3-portfolio-gallery-thumbs-container .pg_grid img{
         height: 232px !important;
     }
 }
