@@ -6,10 +6,11 @@
             <h1 class="border-left">Gallery</h1>
         </div>
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-                <div id="single-nav-left"> <?php previous_post_link('%link', '&laquo; Previous', FALSE); ?></div>
-                <?php the_title(); ?>
-                <div id="single-nav-right"><?php next_post_link('%link', 'Next &raquo;', FALSE); ?></div>
-
+        <div class="single-portfolio-slider">
+                <div id="single-nav-left"> <?php previous_post_link('%link', '&laquo; &nbsp Previous', FALSE); ?></div>
+                <div class="single-portfolio-slider-title" ><?php the_title(); ?></div>
+                <div id="single-nav-right"><?php next_post_link('%link', 'Next &nbsp &raquo;', FALSE); ?></div>
+    </div>
 
 
                 <?php the_content(); ?>

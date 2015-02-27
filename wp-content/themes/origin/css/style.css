@@ -697,6 +697,51 @@ h4{
     position: absolute;
 }
 
+.a3-portfolio-gallery-thumbs-container .pg_grid img{
+    display: inline-block !important;
+}
+.portfolio_item_categories,
+.a3-portfolio-item-content-text{
+    display: none;
+}
+.single-portfolio-slider{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+}
+#single-nav-left,
+#single-nav-right,
+.single-portfolio-slider-title{
+    display: inline-block;    
+}
+.single-portfolio-slider-title{
+    font-size: 30px;
+    font-weight: bold;
+}
+#single-nav-left{
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+}
+#single-nav-right{
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+}
+#single-nav-left a,
+#single-nav-right a{
+    color: #000;
+}
+.pg_grid{
+    float: left;
+}
+body .about-body div.single-a3-portfolio-181 .a3-portfolio-item-content-container{
+    width: 100%;
+}
+body .about-body div.single-a3-portfolio-181 .a3-portfolio-item-content-container .a3-portfolio-gallery-thumbs-container .pg_grid{
+    width: 28%;
+}
+
 @media only screen and (min-width: 1200px) {
     .a3-portfolio-box-content.a3-portfolio-box-content-col6 .a3-portfolio-item .a3-portfolio-item-container img{
         height: 160px;
@@ -715,6 +760,9 @@ h4{
     }
     .a3-portfolio-box-content.a3-portfolio-box-content-col1 .a3-portfolio-item .a3-portfolio-item-container img{
         height: 920px;
+    }
+    body .about-body  .a3-portfolio-item-content-container .a3-portfolio-gallery-thumbs-container .pg_grid img{
+        height: 250px !important;
     }
 }
 @media only screen and (min-width: 768px) {
@@ -774,6 +822,13 @@ h4{
     .a3-portfolio-box-content.a3-portfolio-box-content-col2 .a3-portfolio-item{
         width: 100% !important;
     }
+    body .about-body  .a3-portfolio-item-content-container{
+        width: 100% !important;
+    }
+    body .about-body  .a3-portfolio-item-content-container .a3-portfolio-gallery-thumbs-container .pg_grid{
+        width: 28% !important;
+        margin: 0px !important;
+    }
 }
 
 @media only screen and (min-width: 960px) and (max-width: 1200px) {
@@ -810,6 +865,9 @@ h4{
     }
     .a3-portfolio-box-content.a3-portfolio-box-content-col1 .a3-portfolio-item .a3-portfolio-item-container img{
         height: 920px;
+    }
+    body .about-body  .a3-portfolio-item-content-container .a3-portfolio-gallery-thumbs-container .pg_grid img{
+        height: 250px !important;
     }
 }
 
@@ -867,6 +925,9 @@ h4{
     }
     .a3-portfolio-box-content.a3-portfolio-box-content-col1 .a3-portfolio-item .a3-portfolio-item-container img{
         height: 863px;
+    }
+    body .about-body  .a3-portfolio-item-content-container .a3-portfolio-gallery-thumbs-container .pg_grid img{
+        height: 232px !important;
     }
 }
 
@@ -954,6 +1015,16 @@ h4{
     .a3-portfolio-box-content.a3-portfolio-box-content-col1 .a3-portfolio-item .a3-portfolio-item-container img{
         height: 384px;
     }
+    body .about-body  .a3-portfolio-item-content-container{
+        width: 100% !important;
+    }
+    body .about-body  .a3-portfolio-item-content-container .a3-portfolio-gallery-thumbs-container .pg_grid{
+        width: 50% !important;
+        margin: 0px !important;
+    }
+    body .about-body  .a3-portfolio-item-content-container .a3-portfolio-gallery-thumbs-container .pg_grid img{
+        height: 232px !important;
+    }
 
 }
 
@@ -1016,5 +1087,8 @@ h4{
     .a3-portfolio-box-content.a3-portfolio-box-content-col2 .a3-portfolio-item .a3-portfolio-item-container img,
     .a3-portfolio-box-content.a3-portfolio-box-content-col1 .a3-portfolio-item .a3-portfolio-item-container img{
         height: 270px;
+    }
+    body .about-body  .a3-portfolio-item-content-container .a3-portfolio-gallery-thumbs-container .pg_grid img{
+        height: 232px !important;
     }
 }
