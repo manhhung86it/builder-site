@@ -17,16 +17,6 @@ jQuery(document).ready(function ($) {
                     $(this).fadeIn('slow').removeClass('hidden');
                 }
             });
-        }
-
-        // Apply lightbox gallery only to current items
-        $('.a3-portfolio-menus-container').trigger("nimble_portfolio_lightbox", {items: $("a[rel^='nimblebox']", ".nimble-portfolio .-item:not(.hidden)")});
+        }        
     });
-
-    // DOM loaded, remove the loading animation
-    $('.a3-portfolio-menus-container').removeClass("-isloading");
-
-    // Apply lightbox gallery
-    $('.a3-portfolio-menus-container').trigger("nimble_portfolio_lightbox", {items: $("a[rel^='nimblebox']")});
-
 });

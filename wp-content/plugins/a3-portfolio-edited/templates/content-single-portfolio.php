@@ -22,32 +22,6 @@ if ( empty( $thumb_position ) || $thumb_position == '' ) {
 $portfolio_gallery = a3_portfolio_get_gallery( $portfolio_id );
 ?>
 
-<div class="a3-portfolio-item-image-container" data-portfolioId="<?php echo $portfolio_id; ?>">
-
-	<?php do_action( 'a3_portfolio_before_item_expander_large_image_container', $portfolio_id ); ?>
-
-	<?php a3_portfolio_get_large_image_container( $portfolio_id, $portfolio_gallery ); ?>
-
-	<?php if ( 'below' == $thumb_position ) : ?>
-		<?php
-		/**
-		 * Gallery Thumbnails show below large image
-		 *
-		 */
-		?>
-		<div class="a3-portfolio-gallery-thumbs-below-container">
-			<?php do_action( 'a3_portfolio_before_item_expander_gallery_thumbs_container', $portfolio_id ); ?>
-
-			<?php a3_portfolio_get_gallery_thumbs( $portfolio_id, $portfolio_gallery ); ?>
-
-			<?php do_action( 'a3_portfolio_after_item_expander_gallery_thumbs_container', $portfolio_id ); ?>
-		</div>
-
-	<?php endif; ?>
-
-	<?php do_action( 'a3_portfolio_after_item_expander_large_image_container', $portfolio_id ); ?>
-
-</div>
 
 <div class="a3-portfolio-item-content-container">
 
