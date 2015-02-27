@@ -18,9 +18,10 @@ $active_class = '';
 $class = '';
 $i = 0;
 $j = 0;
+$number_columns = a3_portfolio_get_col_per_row();
 ?>
 
-<div class="a3-portfolio-gallery-thumbs-container">
+<div class="a3-portfolio-gallery-thumbs-container a3-portfolio-box-content-col<?php echo $number_columns;?>">
 
 <?php foreach ( $gallery as $attachment_id ) : ?>
 
