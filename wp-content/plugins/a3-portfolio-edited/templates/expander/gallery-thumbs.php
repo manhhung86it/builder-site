@@ -49,12 +49,8 @@ $j = 0;
 	?>
 
 	<div class="pg_grid <?php echo $active_class; ?> <?php echo $class; ?>" id="<?php echo esc_attr( $attachment_id ); ?>">
-		<div data-bg="<?php echo $thumb[0]; ?>"
-			data-originalfull="<?php echo $thumb_full_url[0]; ?>"
-			data-caption="<?php echo $the_caption; ?>"
-			class="a3-portfolio-gallery-thumb-lazy pg_grid_content"
-			style="background:url(<?php echo $image_blank; ?>) no-repeat center center;"></div>
-	</div>
+            <img class="a3-portfolio-thumb-lazy attachment-a3-portfolio wp-post-image" src="<?php echo $thumb_full_url[0]; ?>">
+        </div>
 
 <?php endforeach; ?>
 
