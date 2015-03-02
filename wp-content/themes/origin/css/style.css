@@ -744,6 +744,10 @@ body .about-body .a3-portfolio-gallery-thumbs-container .pg_grid.last{
 body .about-body .a3-portfolio-gallery-thumbs-container .pg_grid:hover .a3-portfolio-single-card-overlay{
     display: block !important;
 }
+.mfp-image-holder .mfp-close, .mfp-iframe-holder .mfp-close{
+    right: -20px !important;
+    top: 15px !important;
+}
 
 @media only screen and (min-width: 1200px) {
     .a3-portfolio-box-content.a3-portfolio-box-content-col6 .a3-portfolio-item .a3-portfolio-item-container img,
