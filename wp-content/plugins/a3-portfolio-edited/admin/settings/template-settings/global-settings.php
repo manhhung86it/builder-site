@@ -194,67 +194,7 @@ class A3_Portfolio_Global_Settings extends A3_Portfolio_Admin_UI
 				'increment'	=> 1,
 			),
 
-			array(
-				'name' 		=> __( 'Item Main Image Thumbnails', 'a3_portfolios' ),
-				'type' 		=> 'heading',
-           	),
-			array(  
-				'name' 		=> __( 'Thumbnail Size', 'a3_portfolios' ),
-				'desc' 		=> __( 'Sizes set here are the maximum in pixels that WordPress Media will crop or resize the Item Main Image thumbnail.', 'a3_portfolios' ),
-				'id' 		=> 'portfolio_image_thumb',
-				'type' 		=> 'array_textfields',
-				'ids'		=> array( 
-	 								array(  'id' 		=> 'portfolio_image_thumb_width',
-	 										'name' 		=> __( 'x', 'a3_portfolios' ),
-	 										'class' 	=> '',
-	 										'css'		=> 'width:40px;',
-	 										'default'	=> '300' ),
-	 
-	 								array(  'id' 		=> 'portfolio_image_thumb_height',
-	 										'name' 		=> __( 'px', 'a3_portfolios' ),
-	 										'class' 	=> '',
-	 										'css'		=> 'width:40px;',
-	 										'default'	=> '250' )
-	 							)
-			),
-			array(
-				'name' 		=> "",
-				'desc' 		=>  __( 'OFF to Hard Crop thumbnail to exact dimensions. ON for Soft Crop were thumbnails are resized in proportion. If changing you will  need to <a href="http://wordpress.org/extend/plugins/regenerate-thumbnails/">regenerate</a> your thumbnails to see changes on existing Portfolio Items.', 'a3_portfolios' ),
-                'id' 		=> 'portfolio_image_thumbnail_crop',
-				'type' 		=> 'onoff_checkbox',
-				'class'		=> 'portfolio_image_thumbnail_crop',
-				'default'	=> false,
-				'checked_value'		=> true,
-				'unchecked_value'	=> false,
-				'checked_label'		=> __( 'ON', 'a3_portfolios' ),
-				'unchecked_label' 	=> __( 'OFF', 'a3_portfolios' ),
-			),
-
-			array(
-				'name'		=> __( 'Item Card Title Display', 'a3_portfolios' ),
-				'desc' 		=> '',
-				'id'		=> 'cards_title_type_heading',
-				'class'		=> 'cards_title_type_heading',
-                'type' 		=> 'heading',
-           	),
-     		array(
-				'name' 		=> __( 'Item Card Title Display Type', 'a3_portfolios' ),
-				'id' 		=> 'cards_title_type',
-				'class'		=> 'cards_title_type',
-				'type' 		=> 'switcher_checkbox',
-				'default'	=> 'hover',
-				'checked_value'		=> 'hover',
-				'unchecked_value'	=> 'under',
-				'checked_label'		=> __( 'On Mouse Over', 'a3_portfolios' ),
-				'unchecked_label' 	=> __( 'Under Image', 'a3_portfolios' ),
-			),
-
-
-           	array(
-				'name' 		=> __( 'Image Watermarks', 'a3_portfolios' ),
-                'type' 		=> 'heading',
-                'desc' 		=> __( 'To add Watermarks to the Portfolio item images, please use the free <a target="_blank" href="https://wordpress.org/plugins/easy-watermark/">Easy Watermark plugin</a>. It is tested 100% compatible with a3 Portfolios.', 'a3_portfolios' ),
-           	),
+			
 
         ));
 	}

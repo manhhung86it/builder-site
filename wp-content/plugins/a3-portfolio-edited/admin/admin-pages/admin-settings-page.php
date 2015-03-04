@@ -94,7 +94,7 @@ class A3_Portfolio_Settings_Page extends A3_Portfolio_Admin_UI
 	/*-----------------------------------------------------------------------------------*/
 	public function tabs_include() {
 		include_once( $this->admin_plugin_dir() . '/tabs/template-settings/global-settings-tab.php' );
-		include_once( $this->admin_plugin_dir() . '/tabs/template-settings/item-posts-tab.php' );
+//		include_once( $this->admin_plugin_dir() . '/tabs/template-settings/item-posts-tab.php' );
 	}
 
 	/*-----------------------------------------------------------------------------------*/
