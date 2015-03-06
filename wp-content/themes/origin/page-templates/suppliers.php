@@ -9,7 +9,7 @@
 <div class="body">
 
     <div class="body-bottom">
-        <?php dynamic_sidebar('Contact Sidebar - Top'); ?>         
+        <?php dynamic_sidebar('Suppliers Sidebar - Top'); ?>         
     </div>
 
     <div class="about-body">        

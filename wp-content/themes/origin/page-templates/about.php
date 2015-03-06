@@ -8,7 +8,7 @@
 ?>
 <?php get_header(); ?>
 <div class="body">
-    <?php dynamic_sidebar('about Sidebar - Top'); ?> 
+    <?php dynamic_sidebar('About Sidebar - Top'); ?> 
     <div class="about-body">
         <?php while (have_posts()) : the_post(); ?>           
             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>

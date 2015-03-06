@@ -78,10 +78,10 @@
                     
                     <div class="header-social col-sm-6">
                         <ul class="group">
-                            <li><a href="<?php echo $options['LinkIn_url']; ?>"><i class="fa fa-linkedin"></i></a></li>                 
-                            <li><a href="<?php echo $options['google_url']; ?>"><i class="fa fa-google-plus"></i></a></li>       
-                            <li><a href="<?php echo $options['fb_url']; ?>"><i class="fa fa-facebook"></i></a></li>                        
-                            <li><a href="<?php echo $options['twitter_url']; ?>"><i class="fa fa-twitter"></i></a></li>                                
+                            <li><a href="<?php echo $options['LinkIn_url']; ?>" target="_blank"><i class="fa fa-linkedin"></i></a></li>                 
+                            <li><a href="<?php echo $options['google_url']; ?>" target="_blank"><i class="fa fa-google-plus"></i></a></li>       
+                            <li><a href="<?php echo $options['fb_url']; ?>" target="_blank"><i class="fa fa-facebook"></i></a></li>                        
+                            <li><a href="<?php echo $options['twitter_url']; ?>" target="_blank"><i class="fa fa-twitter"></i></a></li>                                
                         </ul>
                     </div>
                 </div>                

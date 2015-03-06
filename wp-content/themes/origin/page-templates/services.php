@@ -8,7 +8,7 @@
 <?php get_header(); ?>
 <div class="body">
 
-    <?php dynamic_sidebar('about Sidebar - Top'); ?> 
+    <?php dynamic_sidebar('Service Sidebar - Top'); ?> 
 
     <div class="about-body">
         <div class="about-title">

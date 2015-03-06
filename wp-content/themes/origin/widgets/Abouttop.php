@@ -7,8 +7,8 @@ class WP_Abouttop extends WP_Widget {
     public function __construct() {
         parent::__construct(
                 'WP_Abouttop', // Base ID
-                'About Top', // Name
-                array('description' => 'Show about top')
+                'Background and Text top', // Name
+                array('description' => 'Show background and text on top')
         );
     }
 
@@ -17,7 +17,7 @@ class WP_Abouttop extends WP_Widget {
          $image_id   = $instance[$this->image_bg_field];
          $image      = new WidgetImageField( $this, $image_id );
          $tmp = $image->get_image_src('full');
-         $style = 'style="background: url(\''.$tmp.'\') no-repeat top left;"';
+         $style = 'style="background: url(\''.$tmp.'\') no-repeat top left; background-size: 100% 100%;"';
         if ($instance) {
             $list_about = '<div class="about-top" '.$style.'>'
                     . '<div class="about-top-content">';

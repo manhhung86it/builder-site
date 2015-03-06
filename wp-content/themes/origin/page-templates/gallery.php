@@ -8,7 +8,7 @@
 ?>
 <?php get_header(); ?>
 <div class="body">
-    <?php dynamic_sidebar('about Sidebar - Top'); ?> 
+    <?php dynamic_sidebar('Gallery Sidebar - Top'); ?> 
 
     <div id="content" role="main" class="about-body">
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>           

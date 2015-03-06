@@ -86,6 +86,17 @@ if (function_exists('register_sidebar')) {
         'before_title' => '<h3 class="widget-title">',
         'after_title' => '</h3>',
     ));
+    
+    register_sidebar(array(
+        'name' => __('Newletter - bottom', 'pm'),
+        'id' => 'newletter-bottom',
+        'description' => __('Appears on about page', 'pm'),
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget' => '</aside>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+    ));
+    
     register_sidebar(array(
         'name' => __('Contact Sidebar - Top', 'pm'),
         'id' => 'sidebar-contact',
@@ -97,7 +108,7 @@ if (function_exists('register_sidebar')) {
     ));
 
     register_sidebar(array(
-        'name' => __('about Sidebar - Top', 'pm'),
+        'name' => __('About Sidebar - Top', 'pm'),
         'id' => 'sidebar-about',
         'description' => __('Appears on about page', 'pm'),
         'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -106,14 +117,41 @@ if (function_exists('register_sidebar')) {
         'after_title' => '</h3>',
     ));
     register_sidebar(array(
-        'name' => __('Newletter - bottom', 'pm'),
-        'id' => 'newletter-bottom',
-        'description' => __('Appears on about page', 'pm'),
+        'name' => __('Service Sidebar - Top', 'pm'),
+        'id' => 'service-wg',
+        'description' => __('Appears on service page', 'pm'),
         'before_widget' => '<aside id="%1$s" class="widget %2$s">',
         'after_widget' => '</aside>',
         'before_title' => '<h3 class="widget-title">',
         'after_title' => '</h3>',
     ));
+    register_sidebar(array(
+        'name' => __('Suppliers Sidebar - Top', 'pm'),
+        'id' => 'supplier-wg',
+        'description' => __('Appears on supplier page', 'pm'),
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget' => '</aside>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+    ));
+    register_sidebar(array(
+        'name' => __('Testimonials Sidebar - Top', 'pm'),
+        'id' => 'testimonials-wg',
+        'description' => __('Appears on testimonials page', 'pm'),
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget' => '</aside>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+    ));   
+    register_sidebar(array(
+        'name' => __('Gallery Sidebar - Top', 'pm'),
+        'id' => 'gallery-wg',
+        'description' => __('Appears on gallery page', 'pm'),
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget' => '</aside>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+    ));   
 }
 add_theme_support('post-thumbnails');
 add_theme_support('custom-header');
