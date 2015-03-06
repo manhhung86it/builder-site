@@ -21,8 +21,8 @@ class WP_Testimonial extends WP_Widget {
             'meta_value' => 1
         ));
         if ($posts) {
-
-            $list_testimonial = '<div class="testimonials-box">'
+            $list_testimonial = '<div class="testimonials-box"><div class="testimonials-header">' . $instance['title'] . '</div></div>';
+            $list_testimonial .= '<div class="testimonials-list">'
                     . '<div class="mainslider">'
                     . '<ul class="slides group">';
 

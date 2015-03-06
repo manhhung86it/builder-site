@@ -26,8 +26,23 @@ class WP_Supplier extends WP_Widget {
             foreach ($posts as $post) {
                 $list_supplier .= '<li>'.get_the_post_thumbnail($post->ID, 'thumbnail').'</li>';
             }
+            
+            $target = '';
+            switch ($instance['link_target']) {
+                case 'new_window':
+                    $target = '_blank';
+                    break;
+                case 'pop_up':
+                    $target = '_blank';
+                    break;
+
+                default:
+                    $target = '';
+                    break;
+            }
+            
             $list_supplier .= '</ul>
-                <div class="services-content-button"><a href="'.$instance['link'].'" target="'.$instance['link_target'].'">More  >></a></div>
+                <div class="services-content-button"><a href="'.$instance['link'].'" target="'.$target.'">More  >></a></div>
             </div>
         </div>';
             echo $list_supplier;

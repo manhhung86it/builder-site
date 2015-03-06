@@ -7,9 +7,10 @@
         </div>
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
         <div class="single-portfolio-slider">
-                <div id="single-nav-left"> <?php previous_post_link('%link', '&laquo; &nbsp Previous', FALSE); ?></div>
+            <div id="single-nav-left"> <a href="<?php echo get_site_url().'/gallery'; ?>">&laquo; &nbsp Back</a></div>
+                <!--<div id="single-nav-left"> <?php //previous_post_link('%link', '&laquo; &nbsp Previous', FALSE); ?></div>-->
                 <div class="single-portfolio-slider-title" ><?php the_title(); ?></div>
-                <div id="single-nav-right"><?php next_post_link('%link', 'Next &nbsp &raquo;', FALSE); ?></div>
+                <!--<div id="single-nav-right"><?php //next_post_link('%link', 'Next &nbsp &raquo;', FALSE); ?></div>-->
     </div>
 
 
