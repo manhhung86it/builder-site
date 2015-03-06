@@ -566,7 +566,6 @@ h4{
     padding-left: 10px;
 }
 .supplier-page-content h4{
-    padding-top: 10px;
     display: inline-block;
 }
 .testimonial-page-content h4{
@@ -765,6 +764,162 @@ body .about-body .a3-portfolio-gallery-thumbs-container .pg_grid:hover .a3-portf
     right: -20px !important;
     top: 15px !important;
 }
+/* news */
+h1.news-head {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-bottom: 1px solid #002b7f;
+    margin-bottom: 30px;
+}
+.posts {
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #b8b8b8;
+}
+.list-post-thumb{
+    padding-right: 15px;
+}
+.posts .list-post-thumb img {
+    max-width: 100%;
+}
+.posts .post .entry-title {
+    margin: 0;
+    padding: 0;
+    color: #2d2d2d;
+    font-size: 18px;
+    font-weight: 600;
+}
+.entry-meta-left {
+    display: inline-block;
+}
+.entry-meta-right {
+    display: inline-block;
+    float: right;
+}
+.comments-link {
+    display: none;
+}
+.entry-content {
+    padding: 10px 0px 15px 0px;
+}
+.widget h3 {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 0 0 5px 0;
+    margin: 0 0 10px 0;
+    border-bottom: 5px solid #d8dbe0;
+    text-transform: uppercase;
+}
+.widget h2 {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 0 0 5px 0;
+    margin: 0 0 10px 0;
+    border-bottom: 5px solid #d8dbe0;
+    text-transform: uppercase;
+}
+.widget ul {
+    list-style-type: square;
+    color: #535353;
+    padding-left: 20px;
+}
+.widget ul li {
+    margin-bottom: 5px;
+}
+.widget ul a {
+    color: #535353;
+    font-size: 14px;
+}
+.widget {
+    margin-bottom: 40px;
+}
+#secondary{
+    padding-left: 30px;
+}
+.cya-single h1.news-head {
+    border-bottom: none;
+    margin-bottom: 10px;
+    text-transform: none;
+    font-size: 24px;
+}
+.cya-entry-meta {
+    width: 100%;
+    border-bottom: 1px solid #002b7f;
+    margin-bottom: 20px;
+}
+.service_share p {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #2b2b2b;
+    margin: 0 0 10px;
+}
+.service_share ul {
+    list-style: none;
+    padding: 0;
+}
+.service_share ul li {
+    float: left;
+}
+.service_share ul li.fb {
+    max-width: 170px;
+}
+.entry-content {
+    padding: 10px 0px 15px 0px;
+}
+.short-description {
+    color: #2b2b2b;
+    font-weight: 700;
+}
+.nav-single {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.nav-single a {
+    color: #2b2b2b;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.nav-single > h3 {
+    display: none;
+}
+.nav-single .nav-previous {
+    padding-right: 20px;
+}
+.comment-reply-title {
+    color: #4464a1;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.comment-form p {
+    margin: 0 0 20px;
+}
+.comment-form p label {
+    display: none;
+}
+.comment-form p input:not([type="submit"]), 
+.comment-form p textarea {
+    padding-left: 5px;
+    width: 60%;
+}
+.form-allowed-tags {
+    display: none;
+}
+.comment-form p input[type="submit"] {
+    border-radius: 35px;
+    background-color: #2d2d2d;
+    border: none;
+    line-height: 25px;
+    color: #fff;
+}
+.comment-form-comment{
+    width: 60%;
+}
+.comment-form p input[type="submit"] {
+    padding: 0px 5px;
+}
 
 @media only screen and (min-width: 1200px) {
     .a3-portfolio-box-content.a3-portfolio-box-content-col6 .a3-portfolio-item .a3-portfolio-item-container img,
@@ -816,7 +971,7 @@ body .about-body .a3-portfolio-gallery-thumbs-container .pg_grid:hover .a3-portf
         border-left: 11px solid transparent;
         color: #ff5a28;
     }
-    
+
     .menu-cya-menu-active:hover:after{
         content: "";
         position: absolute;
@@ -1034,6 +1189,13 @@ body .about-body .a3-portfolio-gallery-thumbs-container .pg_grid:hover .a3-portf
     }
     body .about-body .a3-portfolio-item-content-container .a3-portfolio-gallery-thumbs-container .pg_grid img{
         height: 232px !important;
+    }
+    #secondary,
+    .cya-single,
+    .news-content,
+    .content-news-template{
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
 }

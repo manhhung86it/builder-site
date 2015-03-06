@@ -86,7 +86,7 @@ if (function_exists('register_sidebar')) {
         'before_title' => '<h3 class="widget-title">',
         'after_title' => '</h3>',
     ));
-    
+
     register_sidebar(array(
         'name' => __('Newletter - bottom', 'pm'),
         'id' => 'newletter-bottom',
@@ -96,7 +96,7 @@ if (function_exists('register_sidebar')) {
         'before_title' => '<h3 class="widget-title">',
         'after_title' => '</h3>',
     ));
-    
+
     register_sidebar(array(
         'name' => __('Contact Sidebar - Top', 'pm'),
         'id' => 'sidebar-contact',
@@ -142,7 +142,7 @@ if (function_exists('register_sidebar')) {
         'after_widget' => '</aside>',
         'before_title' => '<h3 class="widget-title">',
         'after_title' => '</h3>',
-    ));   
+    ));
     register_sidebar(array(
         'name' => __('Gallery Sidebar - Top', 'pm'),
         'id' => 'gallery-wg',
@@ -151,13 +151,71 @@ if (function_exists('register_sidebar')) {
         'after_widget' => '</aside>',
         'before_title' => '<h3 class="widget-title">',
         'after_title' => '</h3>',
-    ));   
+    ));
+    register_sidebar(array(
+        'name' => __('News Sidebar', 'pm'),
+        'id' => 'sidebar-news',
+        'description' => __('Appears on news, new detail page', 'pm'),
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget' => '</aside>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+    ));
 }
 add_theme_support('post-thumbnails');
 add_theme_support('custom-header');
 
 // add class active to menu
 add_filter('nav_menu_css_class', 'special_nav_class', 10, 2);
+
+if ( ! function_exists( 'pm_entry_meta' ) ) :
+/**
+ * Set up post entry meta.
+ *
+ * Prints HTML with meta information for current post: categories, tags, permalink, author, and date.
+ *
+ * Create your own pm_entry_meta() to override in a child theme.
+ *
+ * @since Twenty Twelve 1.0
+ */
+function pm_entry_meta() {
+	// Translators: used between list items, there is a space after the comma.
+	$categories_list = get_the_category_list( __( ', ', 'pm' ) );
+
+	// Translators: used between list items, there is a space after the comma.
+	$tag_list = get_the_tag_list( '', __( ', ', 'pm' ) );
+
+	$date = sprintf( '<span class="date"><a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s">%4$s</time></a></span>',
+		esc_url( get_permalink() ),
+		esc_attr( get_the_time() ),
+		esc_attr( get_the_date( 'c' ) ),
+		esc_html( get_the_date() )
+	);
+
+	$author = sprintf( '<span class="author vcard"><i class="fa fa-user"></i>&nbsp<a class="url fn n" href="%1$s" title="%2$s" rel="author">%3$s</a></span>',
+		esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
+		esc_attr( sprintf( __( 'View all posts by %s', 'pm' ), get_the_author() ) ),
+		get_the_author()
+	);
+
+	// Translators: 1 is category, 2 is tag, 3 is the date and 4 is the author's name.
+	if ( $tag_list ) {
+		$utility_text = __( '<div class="entry-meta"><div class="entry-meta-left">%4$s %3$s</div><div class="entry-meta-right">%1$s</div></div>', 'pm' );
+	} elseif ( $categories_list ) {
+		$utility_text = __( '<div class="entry-meta"><div class="entry-meta-left">%4$s %3$s</div><div class="entry-meta-right"><i class="fa fa-folder-open"></i>&nbsp%1$s</div></div>', 'pm' );
+	} else {
+		$utility_text = __( '<div class="entry-meta"><div class="entry-meta-left">%4$s %3$s</div></div>', 'pm' );
+	}
+
+	printf(
+		$utility_text,
+		$categories_list,
+		$tag_list,
+		$date,
+		$author
+	);
+}
+endif;
 
 function special_nav_class($classes, $item) {
     if (in_array('current-menu-item', $classes)) {

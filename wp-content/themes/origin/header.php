@@ -86,12 +86,12 @@
                     </div>
                 </div>                
                 <div class="bottom-header group">
-                    <div class="bottom-header-image col-sm-4">
+                    <div class="bottom-header-image col-sm-3">
                         <?php if (get_header_image()) : ?>
                             <a href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php header_image(); ?>" class="img-responsive" alt="" /></a>
                         <?php endif; ?> 
                     </div>
-                    <div class="col-sm-8 navbar navbar-default navbar-cya navbar-static-top" role="navigation">
+                    <div class="col-sm-9 navbar navbar-default navbar-cya navbar-static-top" role="navigation">
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                                 <span class="sr-only">Toggle navigation</span>
