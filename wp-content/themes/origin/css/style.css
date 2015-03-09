@@ -304,6 +304,8 @@ a {color: #c00c0c; text-decoration: none;}
 #footer{
     /*padding-top: 20px;*/
     text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 .news-letter{
     text-align: center;
@@ -346,12 +348,14 @@ a {color: #c00c0c; text-decoration: none;}
     font-size: 14px;
     font-weight: bold;
     color: #fff;
+    margin-left: 5px;
 }
 .news-letter-content input[type="text"], .news-letter-content input[type="email"]{
     height: 30px;
     width: 300px;
     border-radius: 5px;
     border: 1px solid #bbbbbb;
+    padding-left: 5px;
 }
 
 .menu-footer{
@@ -437,6 +441,8 @@ h4{
     max-width: 960px;
     margin: 0 auto;
     padding-bottom: 50px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 .about {
     padding-top: 20px;
@@ -1047,8 +1053,81 @@ h1.news-head {
     body .about-body .a3-portfolio-item-content-container .a3-portfolio-box-content-col1 .pg_grid img{
         height: 920px !important;
     }
+    .nav > li > a {
+        padding: 10px 9px !important;
+    }
+    .menu-cya-menu-active:after{
+        top: 14px;
+        left: -3px;
+        border-bottom: 10px solid #ff5a28;
+        border-left: 8px solid transparent;
+    }
 }
-
+@media only screen and (min-width: 891px) and (max-width: 959px) {
+    .nav > li > a {
+        padding: 10px 6px !important;
+    }
+    .menu-cya-menu-active:after{
+        top: 14px;
+        left: -3px;
+        border-bottom: 10px solid #ff5a28;
+        border-left: 8px solid transparent;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 890px) {    
+    .bottom-header-image{
+        display: none;
+    }
+    .bottom-header-image-invisible{
+        padding: 20px;
+        display: block;
+        text-align: center;
+    }
+    .bottom-header-image-invisible img{
+        display: inline-block;
+    }
+    .header-contact,
+    .header-social{
+        width: 100%;
+        text-align: center;
+    }
+    .header-social{
+        padding-top: 10px;
+    }
+    .header-social ul{
+        float: none; 
+        padding-right: 0px; 
+    }
+    .navbar-toggle{
+        display: inline-block;
+    }
+    .navbar-collapse.collapse{
+        display: none !important;
+    }
+    .navbar-default {
+        width: 100%;
+    }
+    .collapse.in{
+        display: block !important;
+    }
+    .navbar-nav > li,
+    ul#menu-menu-top{
+        float: none;
+    }
+    .menu-cya-menu-active:after{
+        display: none;
+        top: 14px;
+        left: -3px;
+        border-bottom: 10px solid #ff5a28;
+        border-left: 8px solid transparent;
+    }
+    .top-header {
+        border-bottom: none;
+    }
+    .navbar-collapse{
+        border-top: 1px solid transparent;
+    }
+}
 
 /* Smaller than standard 960 (devices and browsers) */
 @media only screen and (max-width: 959px) { 

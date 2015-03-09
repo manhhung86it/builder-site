@@ -100,7 +100,7 @@
                                 <span class="icon-bar"></span>
                             </button>
                         </div>
-                        <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+                        <div id="navbar" class="navbar-collapse group collapse" aria-expanded="false" style="height: 1px;">
                             <?php wp_nav_menu(array('menu' => 'menu-top', 'container' => '', 'menu_class' => 'nav navbar-nav', 'walker' => new CSS_Menu_Maker_Walker())); ?>
                         </div>
                     </div>
