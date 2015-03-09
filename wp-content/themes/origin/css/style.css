@@ -1414,20 +1414,22 @@ h1.news-head {
     text-transform: uppercase;
 }
 
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, .menu-item-object-page:hover > a:first-child {
     color: #fff;
-    background-color: #e8112d;
+    background-color: #ff5d24;
     font-weight: 600;
 }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
     color: #fff;
-    background-color: #e8112d;
+    background-color: #ff5d24;
 }
+
 
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus{
     color: #fff;
-    background-color: #e8112d;
+    background-color: #ff5d24;
 }
 
 .navbar-nav > li > .dropdown-menu{
