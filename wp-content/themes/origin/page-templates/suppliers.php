@@ -38,7 +38,7 @@
                         <div class="col-sm-7 services-page-content supplier-page-content">
                             <h4><?php echo the_title(); ?></h4>
                             <span><?php the_excerpt(); ?></span>
-                            <a href="<?php echo the_field('website'); ?>"><h5 style="padding-top: 5px;font-size: 13px;color: #000;"><?php echo the_field('website'); ?></h5></a>
+                            <a href="<?php echo the_field('website'); ?>" target="_blank"><h5 style="padding-top: 5px;font-size: 13px;color: #000;"><?php echo the_field('website'); ?></h5></a>
                         </div>
                     </div>                    
     <?php endwhile; ?>
