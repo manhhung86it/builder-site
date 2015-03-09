@@ -9,7 +9,7 @@
 get_header();
 ?>
 
-<div class="about-body">
+<div class="about-body single-news">
     <?php while (have_posts()) : the_post(); ?>
 
         <div class="col-md-12 no-padding cya-single">

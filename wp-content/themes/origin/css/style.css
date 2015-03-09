@@ -786,6 +786,9 @@ h1.archive-title span a{
     font-weight: bold;
     color: inherit;
 }
+.single-news .entry-content .read-more{
+    display: none;
+}
 h1.news-head {
     font-size: 24px;
     font-weight: 700;
