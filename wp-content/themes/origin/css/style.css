@@ -141,7 +141,9 @@ a {color: #c00c0c; text-decoration: none;}
 
 
 /* body */
-
+.navbar-header button{
+    margin-left: 10px;
+}
 .body-top{
     background: url("../images/home-background-top.png")no-repeat top left;
     min-height: 690px;
@@ -773,7 +775,15 @@ body .about-body .a3-portfolio-gallery-thumbs-container .pg_grid:hover .a3-portf
     right: -20px !important;
     top: 15px !important;
 }
+.category-body #secondary{
+    padding-top: 10px;
+    padding-left: 0px;
+}
 /* news */
+h1.archive-title span{
+    font-size: 30px;
+    font-weight: bold;
+}
 h1.news-head {
     font-size: 24px;
     font-weight: 700;
