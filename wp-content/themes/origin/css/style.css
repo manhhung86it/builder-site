@@ -780,9 +780,11 @@ body .about-body .a3-portfolio-gallery-thumbs-container .pg_grid:hover .a3-portf
     padding-left: 0px;
 }
 /* news */
-h1.archive-title span{
+h1.archive-title span,
+h1.archive-title span a{
     font-size: 30px;
     font-weight: bold;
+    color: inherit;
 }
 h1.news-head {
     font-size: 24px;
