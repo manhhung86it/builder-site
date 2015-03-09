@@ -9,7 +9,7 @@ get_header();
 ?>
 <div class="about-body">
     <div class="col-md-12 no-padding content-news-template">
-        <h1 class="news-head">News</h1>
+        <h1 class="news-head">Blog</h1>
     </div>
     <div id="content" role="main" class="col-md-8 no-padding-left content-news-template">
         <?php $postsperpage = get_option('posts_per_page'); ?>
