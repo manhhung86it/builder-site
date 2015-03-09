@@ -35,6 +35,7 @@
         </div><!-- .entry-summary -->
     <?php else : ?>
         <div class="entry-content">
+            <a href="<?php echo the_permalink(); ?>" class="read-more"><?php the_title(); ?></a>
             <p class="short-description"><?php the_field('short_desciption'); ?></p>   
             <?php the_content(__('Continue reading <span class="meta-nav">&rarr;</span>', 'pm')); ?>
             <?php wp_link_pages(array('before' => '<div class="page-links">' . __('Pages:', 'pm'), 'after' => '</div>')); ?>
