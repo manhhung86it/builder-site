@@ -41,7 +41,6 @@
                     <div class="about-content-top">
                         <?php the_content(); ?>
                         <span class="best-service-detail">Best service for you<i class="fa fa-check"></i></span>
-                        <div class="service-detail-btn">GET NOW</div>
                     </div>
                     <div class="service-detail-bottom">
                     </div>
