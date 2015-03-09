@@ -471,6 +471,9 @@ h4{
 }
 
 /* contact */
+.wpcf7-response-output{
+    display: inline-block !important;
+}
 .input-update{
     width: 100%;
     margin: auto;
