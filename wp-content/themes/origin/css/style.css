@@ -162,6 +162,10 @@ a {color: #c00c0c; text-decoration: none;}
     background-size: 100%;
 }
 
+.top_bg{
+    min-height: 300px;
+}
+
 .testimonials-header{
     text-align: center;
     font-weight: bold;
@@ -214,7 +218,7 @@ a {color: #c00c0c; text-decoration: none;}
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
-    .testimonials-box{
+    .testimonials-box, .top_bg{
         min-height: 100px;
     }
 
@@ -228,7 +232,7 @@ a {color: #c00c0c; text-decoration: none;}
 }
 
 @media only screen and (min-width: 480px) and (max-width: 600px) {
-    .testimonials-box{
+    .testimonials-box, .top_bg{
         min-height: 150px;
     }
     .testimonials-header{
@@ -241,7 +245,7 @@ a {color: #c00c0c; text-decoration: none;}
 }
 
 @media only screen and (min-width: 601px) and (max-width: 770px) {
-    .testimonials-box{
+    .testimonials-box, .top_bg{
         min-height: 200px;
     }
     .testimonials-header{
@@ -254,7 +258,7 @@ a {color: #c00c0c; text-decoration: none;}
 }
 
 @media only screen and (min-width: 771px) and (max-width: 979px) {
-    .testimonials-box{
+    .testimonials-box, .top_bg{
         min-height: 250px;
     }
     .testimonials-header{
@@ -494,11 +498,7 @@ h4{
     padding-left: 16px;
     display: inline-block;
 }
-.about-top{
-    min-height: 260px;
-    background: url("../images/about-background.png")no-repeat top left;
-    background-size:100% 100%;
-}
+
 .about-top-content{
     min-width: 100px;
     min-height: 50px;
@@ -1486,7 +1486,7 @@ h1.news-head {
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, .menu-item-object-page:hover > a:first-child {
     color: #fff;
     background-color: #ff5d24;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
@@ -1526,4 +1526,8 @@ h1.news-head {
 .navbar-default .navbar-nav > li.menu-cya-menu-active:hover > a{
     color: #fff;
     background-color: #ff5d24;
+}
+
+.showed{
+    display: block !important;
 }

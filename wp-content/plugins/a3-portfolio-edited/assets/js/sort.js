@@ -19,4 +19,14 @@ jQuery(document).ready(function ($) {
             });
         }        
     });
+    
+    $('.a3-portfolio-navigation-mobile').click(function (e) {
+        e.preventDefault();
+        
+        if (!$('.a3-portfolio-menus-container').hasClass('showed')) {
+            $('.a3-portfolio-menus-container').fadeIn('slow').addClass('showed');
+        }else{
+            $('.a3-portfolio-menus-container').fadeOut('slow').removeClass('showed');
+        }
+    });
 });
