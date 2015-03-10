@@ -17,7 +17,7 @@ class WP_Abouttop extends WP_Widget {
          $image_id   = $instance[$this->image_bg_field];
          $image      = new WidgetImageField( $this, $image_id );
          $tmp = $image->get_image_src('full');
-         $style = 'style="background: url(\''.$tmp.'\') no-repeat top left; background-size: 100% 100%;"';
+         $style = 'style="background: url(\''.$tmp.'\') no-repeat center center;  -webkit-background-size: 100%; -moz-background-size: 100%; -o-background-size: 100%; background-size: 100%;"';
         if ($instance) {
             $list_about = '<div class="about-top" '.$style.'>'
                     . '<div class="about-top-content">';

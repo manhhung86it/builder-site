@@ -19,7 +19,7 @@ class WP_Supplier extends WP_Widget {
             'meta_value' => 1
         ));
         if ($posts) {
-            $list_supplier = '<div class="services">SOME <span>CLIENTS</span> WHO USE OUR <span>SERVICES</span></div><hr>';
+            $list_supplier = '<div class="services">SOME OF OUR <span>SUPPLIERS</span></div><hr>';
             $list_supplier .= '<div class="services"> 
                 <div class="services-content"> 
                     <ul class="group">';

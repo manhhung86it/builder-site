@@ -14,6 +14,11 @@ class WP_Testimonial extends WP_Widget {
 
     public function widget($args, $instance) {
         extract($args);
+        $image_id = $instance[$this->image_bg_field];
+        $image = new WidgetImageField($this, $image_id);
+        $tmp = $image->get_image_src('full');
+        $style = 'style="background: url(\''.$tmp.'\') no-repeat center center; -webkit-background-size: 100%; -moz-background-size: 100%; -o-background-size: 100%; background-size: 100%;"';
+        
         $posts = get_posts(array(
             'posts_per_page' => $instance['number'],
             'post_type' => 'testimonial',
@@ -21,8 +26,7 @@ class WP_Testimonial extends WP_Widget {
             'meta_value' => 1
         ));
         if ($posts) {
-            $list_testimonial = '<div class="testimonials-box"><div class="testimonials-header">' . $instance['title'] . '</div></div>';
-            $list_testimonial .= '<div class="testimonials-list">'
+            $list_testimonial = '<div class="testimonials-box"  '.$style.'>'
                     . '<div class="mainslider">'
                     . '<ul class="slides group">';
 
