@@ -9,7 +9,6 @@
 get_header();
 ?>
 
-kahfvnlzkdxnvknlk;
 <?php while (have_posts()) : the_post(); ?>
 
     <div class="col-md-12 no-padding cya-single">

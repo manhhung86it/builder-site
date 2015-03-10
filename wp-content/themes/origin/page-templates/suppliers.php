@@ -33,7 +33,10 @@
                     ?>
                     <div class="services-body col-sm-6">                
                         <div class="col-sm-5 supplier-icon">
-                            <?php echo the_post_thumbnail(); ?>
+                            <?php 
+                            $feat_image = wp_get_attachment_url(get_post_thumbnail_id($post->ID));                            
+                            ?>
+                            <img src="<?php echo $feat_image;?>" />
                         </div>
                         <div class="col-sm-7 services-page-content supplier-page-content">
                             <h4><?php echo the_title(); ?></h4>

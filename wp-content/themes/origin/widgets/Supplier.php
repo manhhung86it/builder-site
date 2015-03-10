@@ -24,9 +24,10 @@ class WP_Supplier extends WP_Widget {
                 <div class="services-content"> 
                     <ul class="group">';
             foreach ($posts as $post) {
-                $list_supplier .= '<li>'.get_the_post_thumbnail($post->ID, 'thumbnail').'</li>';
+                $feat_image = wp_get_attachment_url(get_post_thumbnail_id($post->ID));
+                $list_supplier .= '<li><img src="'.$feat_image.'"/></li>';
             }
-            
+
             $target = '';
             switch ($instance['link_target']) {
                 case 'new_window':
@@ -40,9 +41,9 @@ class WP_Supplier extends WP_Widget {
                     $target = '';
                     break;
             }
-            
+
             $list_supplier .= '</ul>
-                <div class="services-content-button"><a href="'.$instance['link'].'" target="'.$target.'">More  &raquo</a></div>
+                <div class="services-content-button"><a href="' . $instance['link'] . '" target="' . $target . '">More  &raquo</a></div>
             </div>
         </div>';
             echo $list_supplier;
