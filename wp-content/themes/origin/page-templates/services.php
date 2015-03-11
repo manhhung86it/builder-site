@@ -25,7 +25,7 @@
                     <div class="services-body col-sm-4">                
                         <div class="services-icon">
                             <a href="<?php echo the_permalink(); ?>">
-                                <img src="<?php echo the_field('imga'); ?>"> 
+                                <?php echo the_post_thumbnail(); ?> 
                             </a>
                         </div>
                         <div class="col-sm-9 services-page-content">

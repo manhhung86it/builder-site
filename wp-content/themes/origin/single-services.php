@@ -18,17 +18,17 @@
         <?php while (have_posts()) : the_post(); ?>
             <div class="about-title about-title-second">
                 <div class="about-title-second-content">
-                    <img src="<?php echo the_field('imga'); ?>"><div><?php the_title(); ?></div>
+                    <?php echo the_post_thumbnail(); ?><div><?php the_title(); ?></div>
                 </div>
             </div>
 
             <div class="about group">    
                 <div class="col-sm-6 col-xs-12 about-content pull-right">
                     <div class="service-detail-image-1">
-                        <?php echo the_post_thumbnail(); ?>
+                        <img src="<?php echo the_field('content_image_1'); ?>" />
                     </div>
                     <div class="service-detail-image-2">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/services-detail-2.png" />
+                        <img src="<?php echo the_field('content_image_2'); ?>" />
                     </div>
                     <div class="service-detail-image-3">
                         <img src="<?php echo get_template_directory_uri(); ?>/images/services-detail-3.png" />
