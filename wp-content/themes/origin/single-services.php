@@ -35,9 +35,9 @@
                     </div>
                 </div>
                 <div class="col-sm-6 col-xs-12 about-content pull-left">
-                    <div class="about-content-title">
+<!--                    <div class="about-content-title">
                         <h4>Lorem Ipsum is simply dummy text</h4>
-                    </div>
+                    </div>-->
                     <div class="about-content-top">
                         <?php the_content(); ?>
                         <span class="best-service-detail">Best service for you<i class="fa fa-check"></i></span>
