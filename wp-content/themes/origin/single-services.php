@@ -28,10 +28,10 @@
                         <?php echo the_post_thumbnail(); ?>
                     </div>
                     <div class="service-detail-image-2">
-                        <img src="http://localhost/cya-wp/wp-content/themes/origin/images/services-detail-2.png" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/services-detail-2.png" />
                     </div>
                     <div class="service-detail-image-3">
-                        <img src="http://localhost/cya-wp/wp-content/themes/origin/images/services-detail-3.png" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/services-detail-3.png" />
                     </div>
                 </div>
                 <div class="col-sm-6 col-xs-12 about-content pull-left">
