@@ -1576,6 +1576,9 @@ h1.news-head {
     background-color: #ff5d24;
 }
 
+.bottom-menu .menu-item-object-page:hover > a:first-child{
+    background: transparent;
+}
 
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus{
     color: #fff;
@@ -1612,4 +1615,12 @@ h1.news-head {
 
 .showed{
     display: block !important;
+}
+
+.comment-author .avatar {
+    display: none;
+}
+
+.comment{
+    margin-bottom: 5px;
 }
