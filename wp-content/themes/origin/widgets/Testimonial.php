@@ -34,9 +34,14 @@ class WP_Testimonial extends WP_Widget {
                 $list_testimonial .='<li>'
                         . get_the_post_thumbnail($post->ID, 'thumbnail')
                         . '<div class="slider-content">'
-                        . '<div class="slider-title">' . $post->customer_name . '</div>'
-                        . '<span>' . $post->post_content . '</span>'
-                        . '</div>'
+                        . '<div class="slider-title">' . $post->customer_name . '</div>';
+                if (strlen($post->post_content) >= 200) {
+                    $list_testimonial .= '<span>' . substr( strip_tags($post->post_content), 0, 200) . '</span>';
+                    $list_testimonial .= '<a class=\'more-link\' href="'.get_site_url().'/testimonials">...read more</a>';
+                } else {
+                    $list_testimonial .= '<span>' . $post->post_content . '</span>';
+                }
+                $list_testimonial .= '</div>'
                         . '</li>';
             }
 

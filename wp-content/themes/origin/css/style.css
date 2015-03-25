@@ -312,7 +312,18 @@ a {color: #c00c0c; text-decoration: none;}
         padding-top: 80px;
     }
 }
-
+.testimonial-images{
+    padding-bottom: 20px !important;
+    text-align: center;
+}
+.testimonial-images img{
+    width: 280px;
+    height: 280px;
+}
+.testimonial-content h4{
+    padding-top: 10px;
+    font-size: 14px;
+}
 
 .testimonials-list{
     min-height: 250px;
@@ -391,6 +402,7 @@ a {color: #c00c0c; text-decoration: none;}
 .services-content-button{
     padding-top: 40px;
     padding-left: 10px;
+    line-height: 50px;
 }
 .services-content-button,
 .services-content ul,
@@ -1444,6 +1456,28 @@ h1.news-head {
         padding-left: 10px;
         padding-right: 10px;
     }
+    .services-content ul,
+    .services-content ul li,
+    .services-content-button{
+        width: 100%;
+    }
+    .services-content ul li img{
+        position: relative;
+    }
+    .services-content-button, 
+    .services-content ul, 
+    .services-content ul li{
+        margin-right: 0px;
+    }
+    .services-content-button{
+        min-height: 20px;
+        padding-top: 20px;
+        display: block;
+    }
+    .services-content-button a{
+        width: 100%;
+        position: relative;
+    }
 
 }
 
@@ -1612,4 +1646,10 @@ h1.news-head {
 
 .showed{
     display: block !important;
+}
+.mfp-iframe-scaler iframe {
+    background: url('../images/loading.gif') no-repeat scroll center center #000000 !important;    
+}
+.mfp-iframe-scaler .mfp-iframe{
+    background-color: #fff !important;
 }

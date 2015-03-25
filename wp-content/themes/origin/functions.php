@@ -438,6 +438,22 @@ if (!function_exists('pm_comment')) :
 
 endif;
 
+function new_excerpt_length() {
+    return 40;
+}
+
+add_filter('excerpt_length', 'new_excerpt_length');
+
+function new_excerpt_more($more) {
+    global $post;
+    if ($post->post_type == 'supplier') {
+        return "";
+    } else {
+        return "<a class='more-link' href='" . get_permalink($post->ID) . "'> ...read more</a>";
+    }
+}
+
+add_filter('excerpt_more', 'new_excerpt_more');
 require_once ( get_template_directory() . '/theme-options.php' );
 include ABSPATH . 'wp-content/themes/origin/widgets/Services.php';
 include ABSPATH . 'wp-content/themes/origin/widgets/Testimonial.php';

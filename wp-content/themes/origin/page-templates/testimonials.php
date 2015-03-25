@@ -6,6 +6,12 @@
  */
 ?>
 <?php get_header(); ?>
+<style type="text/css">
+    .mfp-content .mfp-iframe-scaler button.mfp-close{
+        right: -20px !important;
+        top: -27px !important;
+    }
+</style>
 <div class="body">
 
     <div class="body-bottom">
@@ -18,7 +24,8 @@
         </div>
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                 <div class="testimonial-title"><?php the_content(); ?></div>
-            <?php endwhile;
+                <?php
+            endwhile;
         endif;
         ?>
 
@@ -31,18 +38,40 @@
                     $i++;
                     ?>
                     <div class="services-body col-sm-6">                
-                        <div class="col-sm-4 testimonial-icon">
-        <?php echo the_post_thumbnail(); ?>
+                        <div class="col-sm-5 col-md-4 testimonial-icon">
+                            <?php echo the_post_thumbnail(); ?>
                         </div>
-                        <div class="col-sm-8 services-page-content testimonial-page-content">
+                        <div class="col-sm-7 col-md-8 services-page-content testimonial-page-content testimonialPopup-<?php echo $i; ?>">
                             <span><?php the_excerpt(); ?></span>
                             <h4><?php echo the_field('customer_name'); ?></h4>
-        <?php echo the_field('customer_email'); ?>
+                            <?php // echo the_field('customer_email');  ?>
                         </div>
                     </div>                    
-    <?php endwhile; ?>
+                <?php endwhile; ?>
         </div>
     </div>
-<?php dynamic_sidebar('Newletter - bottom'); ?> 
+    <?php dynamic_sidebar('Newletter - bottom'); ?> 
 </div>
 <?php get_footer(); ?>
+<script>
+    jQuery(document).ready(function() {
+
+        jQuery('.testimonial-page-content a').magnificPopup({
+            type: 'iframe',
+            iframe: {
+                markup: '<div class="mfp-iframe-scaler">' +
+                        '<div class="mfp-close"></div>' +
+                        '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' +
+                        '</div>',
+                patterns: {
+                    renovationa: {
+                        src: '<?php echo get_site_url(); ?>'
+                    }
+                }
+
+            }
+
+        });
+
+    });
+</script>
