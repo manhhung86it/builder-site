@@ -27,15 +27,14 @@
         <div id="page-wrap">
             <div class="body">
                 <div class="about-body">
-                    <?php while (have_posts()) : the_post(); ?>
-                        <div class="about-title about-title-second">
-                            <div class="about-title-second-content">
-                                <div><?php the_title(); ?></div>
-                            </div>
-                        </div>
+                    <?php while (have_posts()) : the_post(); ?>                       
                         <div class="about group testimonial-single-content">    
                             <div class="col-sm-5 col-xs-12 about-content testimonial-images">
-                                <?php echo the_post_thumbnail(); ?>
+                                <?php if (has_post_thumbnail()) { ?>
+                                    <?php echo the_post_thumbnail(); ?>
+                                <?php } else { ?>                          
+                                    <img width="144" height="148" src="<?php echo get_template_directory_uri(); ?>/images/defaultImg.jpg" class="attachment-post-thumbnail wp-post-image" alt="Testimonials">
+                                <?php } ?>
                             </div>
                             <div class="col-sm-7 col-xs-12 about-content testimonial-content">
                                 <div class="about-content-top">

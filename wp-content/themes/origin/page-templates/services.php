@@ -22,7 +22,7 @@
                 while (have_posts()) : the_post();
                     $i++;
                     ?>
-                    <div class="services-body col-sm-4">                
+                    <div class="services-body services-body-height col-sm-4">                
 <!--                        <div class="services-icon">
                             <a href="<?php echo the_permalink(); ?>">
                                 <?php echo the_post_thumbnail(); ?> 
@@ -32,7 +32,7 @@
                             <a href="<?php echo the_permalink(); ?>"> 
                                 <h4><?php the_title(); ?></h4>
                             </a>
-                            <span><?php the_excerpt(); ?></span>
+                            <span><?php echo substr(get_the_excerpt(),0,200); ?></span>
                         </div>
                     </div>                    
                 <?php endwhile; ?>

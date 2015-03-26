@@ -7,6 +7,9 @@
 ?>
 <?php get_header(); ?>
 <style type="text/css">
+    .mfp-iframe-scaler iframe{
+        height: 80% !important;
+    }
     .mfp-content .mfp-iframe-scaler button.mfp-close{
         right: -20px !important;
         top: -27px !important;
