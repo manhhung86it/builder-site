@@ -69,7 +69,7 @@
                             <div class="header-contact-icon"><i class="fa fa-envelope"></i></div>
                             <div class="header-contact-value"><?php echo $options['email']; ?></div>
                         </div>
-                        <span>|</span>
+                        <span></span>
                         <div class="header-contact-content">
                             <div class="header-contact-icon"><i class="fa fa-phone"></i></div>
                             <div class="header-contact-value"><?php echo $options['phone']; ?></div>
@@ -78,10 +78,21 @@
                     
                     <div class="header-social col-sm-6">
                         <ul class="group">
-                            <li><a href="<?php echo $options['LinkIn_url']; ?>" target="_blank"><i class="fa fa-linkedin"></i></a></li>                 
-                            <li><a href="<?php echo $options['google_url']; ?>" target="_blank"><i class="fa fa-google-plus"></i></a></li>       
-                            <li><a href="<?php echo $options['fb_url']; ?>" target="_blank"><i class="fa fa-facebook"></i></a></li>                        
-                            <li><a href="<?php echo $options['twitter_url']; ?>" target="_blank"><i class="fa fa-twitter"></i></a></li>                                
+                            <?php if($options['LinkIn_url'] != null){ ?>
+                            <li><a href="<?php echo $options['LinkIn_url']; ?>" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                            <?php } ?>
+                            
+                            <?php if($options['google_url'] != null){ ?>
+                            <li><a href="<?php echo $options['google_url']; ?>" target="_blank"><i class="fa fa-google-plus"></i></a></li>  
+                            <?php } ?>
+                            
+                            <?php if($options['fb_url'] != null){ ?>
+                            <li><a href="<?php echo $options['fb_url']; ?>" target="_blank"><i class="fa fa-facebook"></i></a></li>  
+                            <?php } ?>
+                            
+                            <?php if($options['twitter_url'] != null){ ?>
+                            <li><a href="<?php echo $options['twitter_url']; ?>" target="_blank"><i class="fa fa-twitter"></i></a></li>   
+                            <?php } ?>
                         </ul>
                     </div>
                 </div>                

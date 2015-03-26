@@ -21,7 +21,6 @@
                     <?php echo the_post_thumbnail(); ?><div><?php the_title(); ?></div>
                 </div>
             </div>
-
             <div class="about group">    
                 <div class="col-sm-6 col-xs-12 about-content pull-right">
                     <div class="service-detail-image-1">
@@ -30,14 +29,18 @@
                     <div class="service-detail-image-2">
                         <img src="<?php echo the_field('content_image_2'); ?>" />
                     </div>
-                    <div class="service-detail-image-3">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/services-detail-3.png" />
-                    </div>
+                    
+                    <?php if(get_field('show_arrow') == true ) { ?>
+                        <div class="service-detail-image-3">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/services-detail-3.png" />
+                        </div>
+                    <?php } ?>
+
                 </div>
                 <div class="col-sm-6 col-xs-12 about-content pull-left">
-<!--                    <div class="about-content-title">
-                        <h4>Lorem Ipsum is simply dummy text</h4>
-                    </div>-->
+                    <!--                    <div class="about-content-title">
+                                            <h4>Lorem Ipsum is simply dummy text</h4>
+                                        </div>-->
                     <div class="about-content-top">
                         <?php the_content(); ?>
                         <span class="best-service-detail">Best service for you<i class="fa fa-check"></i></span>

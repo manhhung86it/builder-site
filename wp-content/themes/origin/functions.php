@@ -232,7 +232,8 @@ if (!function_exists('pm_content_nav')) :
 endif;
 
 function special_nav_class($classes, $item) {
-    if (in_array('current-menu-item', $classes)) {
+//    var_dump(in_array('current-menu-ancestor'));
+    if (in_array('current-menu-item', $classes) || in_array('current-menu-ancestor', $classes)) {
         $classes[] = 'menu-cya-menu-active';
     }
     return $classes;
