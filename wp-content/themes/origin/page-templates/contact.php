@@ -33,7 +33,11 @@
                             <div><span>Address:</span> <?php echo $options['address']; ?></div>
                             <div><span>Email:</span>  <?php echo $options['email']; ?></div>
                             <div><span>Phone:</span> <?php echo $options['phone']; ?></div>
-                            <div><span>Fax:</span> <?php echo $options['fax']; ?></div>
+                            <?php
+                            if ($options['fax'] != '')
+                                echo '<div><span>Fax:</span> ' . $options['fax'] . '</div>';
+                            ?>
+
                         </div>
                     </div>
 
