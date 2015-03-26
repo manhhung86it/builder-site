@@ -32,7 +32,7 @@
                             <a href="<?php echo the_permalink(); ?>"> 
                                 <h4><?php the_title(); ?></h4>
                             </a>
-                            <span><?php echo substr(get_the_excerpt(),0,200); ?></span>
+                            <span><?php the_excerpt(); ?></span>
                         </div>
                     </div>                    
                 <?php endwhile; ?>
