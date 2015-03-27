@@ -42,7 +42,11 @@
                     ?>
                     <div class="services-body col-sm-6">                
                         <div class="col-sm-5 col-md-4 testimonial-icon">
-                            <?php echo the_post_thumbnail(); ?>
+                            <?php if (has_post_thumbnail()) { ?>
+                                <?php echo the_post_thumbnail(); ?>
+                            <?php } else { ?>                          
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/defaultImg.jpg" class="attachment-post-thumbnail wp-post-image" alt="Testimonials">
+                            <?php } ?>
                         </div>
                         <div class="col-sm-7 col-md-8 services-page-content testimonial-page-content testimonialPopup-<?php echo $i; ?>">
                             <span><?php the_excerpt(); ?></span>
