@@ -31,8 +31,8 @@
                         <div class="contact">
                             <h3>Contact Details</h3>
                             <div><span>Address:</span> <?php echo $options['address']; ?></div>
-                            <div><span>Email:</span>  <?php echo $options['email']; ?></div>
-                            <div><span>Phone:</span> <?php echo $options['phone']; ?></div>
+                            <div><span>Email:</span> <a href="mailto:<?php echo $options['email']; ?>" target="_top" > <?php echo $options['email']; ?></a></div>
+                            <div><span>Phone:</span><a href="tel:<?php echo $options['phone']; ?>"> <?php echo $options['phone']; ?></a></div>
                             <?php
                             if ($options['fax'] != '')
                                 echo '<div><span>Fax:</span> ' . $options['fax'] . '</div>';

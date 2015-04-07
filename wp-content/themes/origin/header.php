@@ -67,12 +67,12 @@
                     <div class="header-contact col-sm-6">
                         <div class="header-contact-content">
                             <div class="header-contact-icon"><i class="fa fa-envelope"></i></div>
-                            <div class="header-contact-value"><?php echo $options['email']; ?></div>
+                            <div class="header-contact-value"><a href="mailto:<?php echo $options['email']; ?>" target="_top" ><?php echo $options['email']; ?></a></div>
                         </div>
                         <span></span>
                         <div class="header-contact-content">
                             <div class="header-contact-icon"><i class="fa fa-phone"></i></div>
-                            <div class="header-contact-value"><?php echo $options['phone']; ?></div>
+                            <div class="header-contact-value"><a href="tel:<?php echo $options['phone']; ?>"><?php echo $options['phone']; ?></a></div>
                         </div>
                     </div>
                     

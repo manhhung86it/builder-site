@@ -40,20 +40,22 @@
                 while (have_posts()) : the_post();
                     $i++;
                     ?>
-                    <div class="services-body col-sm-6">                
-                        <div class="col-sm-5 col-md-4 testimonial-icon">
-                            <?php if (has_post_thumbnail()) { ?>
-                                <?php echo the_post_thumbnail(); ?>
-                            <?php } else { ?>                          
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/defaultImg.jpg" class="attachment-post-thumbnail wp-post-image" alt="Testimonials">
-                            <?php } ?>
-                        </div>
-                        <div class="col-sm-7 col-md-8 services-page-content testimonial-page-content testimonialPopup-<?php echo $i; ?>">
-                            <span><?php the_excerpt(); ?></span>
-                            <h4><?php echo the_field('customer_name'); ?></h4>
-                            <?php // echo the_field('customer_email');  ?>
-                        </div>
-                    </div>                    
+                    <?php if (get_field('show_on_homepage') == 1) { ?>
+                        <div class="services-body services-body-height col-sm-6">                
+                            <div class="col-sm-5 col-md-4 testimonial-icon">
+                                <?php if (has_post_thumbnail()) { ?>
+                                    <?php echo the_post_thumbnail(); ?>
+                                <?php } else { ?>                          
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/defaultImg.jpg" class="attachment-post-thumbnail wp-post-image" alt="Testimonials">
+                                <?php } ?>
+                            </div>
+                            <div class="col-sm-7 col-md-8 services-page-content testimonial-page-content testimonialPopup-<?php echo $i; ?>">
+                                <span><?php the_excerpt(); ?></span>
+                                <h4><?php echo the_field('customer_name'); ?></h4>
+                                <?php // echo the_field('customer_email');  ?>
+                            </div>
+                        </div>  
+                    <?php } ?>
                 <?php endwhile; ?>
         </div>
     </div>
