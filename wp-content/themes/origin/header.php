@@ -72,7 +72,7 @@
                         <span></span>
                         <div class="header-contact-content">
                             <div class="header-contact-icon"><i class="fa fa-phone"></i></div>
-                            <div class="header-contact-value"><a href="tel:<?php echo $options['phone']; ?>"><?php echo $options['phone']; ?></a></div>
+                            <div class="header-contact-value"><a href="tel:%2B<?php echo $options['phone']; ?>">+<?php echo $options['phone']; ?></a></div>
                         </div>
                     </div>
                     
