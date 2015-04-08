@@ -22,7 +22,6 @@
                 while (have_posts()) : the_post();
                     $i++;
                     ?>
-                    <?php if(get_field('show_on_homepage') == 1 ){ ?>
                     <div class="services-body services-body-height col-sm-4">                
                         <!--                        <div class="services-icon">
                                                     <a href="<?php echo the_permalink(); ?>">
@@ -36,7 +35,6 @@
                             <span><?php the_excerpt(); ?></span>
                         </div>
                     </div> 
-                    <?php } ?>
                 <?php endwhile; ?>
         </div>
     </div>
