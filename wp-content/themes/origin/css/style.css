@@ -242,6 +242,7 @@ a {color: #c00c0c; text-decoration: none;}
     width: 68%;
     display: inline-block;
     padding-left: 10px;
+    background-color: rgba(255,0,0,0.1);
 }
 .slider-title{
     font-size: 16px;
@@ -250,6 +251,7 @@ a {color: #c00c0c; text-decoration: none;}
 }
 .slider-content span{
     font-size: 14px;
+    color: #000;
     /*text-shadow: 1px 1px 1px #fff;*/
 }
 
@@ -271,14 +273,14 @@ a {color: #c00c0c; text-decoration: none;}
 
 @media only screen and (min-width: 480px) and (max-width: 600px) {
     .testimonials-box, .top_bg{
-        min-height: 150px;
+        min-height: 200px;
     }
     .testimonials-header{
         line-height: 150px;
     }
 
     .mainslider{
-        padding-top: 20px;
+        padding-top: 40px;
     }
 }
 
@@ -472,12 +474,12 @@ a {color: #c00c0c; text-decoration: none;}
 #footer{
     /*padding-top: 20px;*/
     text-align: center;
-    padding-left: 5px;
-    padding-right: 5px;
+/*    padding-left: 5px;
+    padding-right: 5px;*/
 }
 .news-letter{
     text-align: center;
-    /*margin-top: 20px;*/
+    margin-top: -1px;
     background-color: #ededed;
     padding-top: 20px;
     padding-bottom: 20px;

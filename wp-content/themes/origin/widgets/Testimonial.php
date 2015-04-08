@@ -17,7 +17,7 @@ class WP_Testimonial extends WP_Widget {
         $image_id = $instance[$this->image_bg_field];
         $image = new WidgetImageField($this, $image_id);
         $tmp = $image->get_image_src('full');
-        $style = 'style="background: url(\''.$tmp.'\') no-repeat center center; -webkit-background-size: 100%; -moz-background-size: 100%; -o-background-size: 100%; background-size: 100%;"';
+        $style = 'style="background: url(\''.$tmp.'\') no-repeat center center; -webkit-background-size: 100%; -moz-background-size: 100%; -o-background-size: 100%;"';
         
         $posts = get_posts(array(
             'posts_per_page' => $instance['number'],
