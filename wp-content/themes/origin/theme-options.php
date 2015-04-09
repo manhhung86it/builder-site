@@ -44,6 +44,12 @@ function theme_options_do_page() {
                         <label class="description" for="wp_theme_options[email]"><?php _e('Your email', 'wp'); ?></label>
                     </td>
                 </tr>
+                <tr valign="top"><th scope="row"><?php _e('Country Code', 'wp'); ?></th>
+                    <td>
+                        <input id="wp_theme_options[country_code]" class="regular-text" type="text" name="wp_theme_options[country_code]" value="<?php esc_attr_e($options['country_code']); ?>" />   
+                        <label class="description" for="wp_theme_options[country_code]"><?php _e('Country Code', 'wp'); ?></label>
+                    </td>
+                </tr>
                 <tr valign="top"><th scope="row"><?php _e('Phone', 'wp'); ?></th>
                     <td>
                         <input id="wp_theme_options[phone]" class="regular-text" type="text" name="wp_theme_options[phone]" value="<?php esc_attr_e($options['phone']); ?>" />   
@@ -104,6 +110,7 @@ function theme_options_do_page() {
  */
 function theme_options_validate($input) {
     $input['email'] = wp_filter_nohtml_kses($input['email']);
+    $input['country_code'] = wp_filter_nohtml_kses($input['country_code']);
     $input['phone'] = wp_filter_nohtml_kses($input['phone']);
     $input['fax'] = wp_filter_nohtml_kses($input['fax']);
     $input['address'] = wp_filter_nohtml_kses($input['address']);
