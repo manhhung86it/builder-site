@@ -1503,7 +1503,12 @@ h1.news-head {
         width: 100%;
         position: relative;
     }
-
+    .mainslider img{
+        display: none;
+    }
+    .testimonials-box .mainslider ul.slides li{
+        text-align: center;
+    }
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */

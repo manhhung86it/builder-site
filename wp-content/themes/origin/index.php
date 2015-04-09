@@ -6,6 +6,7 @@
     </div>
     <div class="body-middle">
         <?php dynamic_sidebar('Home Sidebar - Middle'); ?> 
+        <?php dynamic_sidebar('Newletter - bottom'); ?>
     </div>
 </div>
 
