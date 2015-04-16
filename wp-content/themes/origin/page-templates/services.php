@@ -15,7 +15,7 @@
             <h1 class="border-left">SERVICES</h1>
         </div>
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-                <div class="testimonial-title"><?php the_content(); ?></div>
+                <div class=""><?php the_content(); ?></div>
                 <?php
             endwhile;
         endif;
