@@ -14,6 +14,12 @@
         <div class="about-title">
             <h1 class="border-left">SERVICES</h1>
         </div>
+        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                <div class="testimonial-title"><?php the_content(); ?></div>
+                <?php
+            endwhile;
+        endif;
+        ?>
         <div class="about group"> 
             <?php query_posts(array('post_type' => 'services', 'orderby' => 'menu_order', 'order' => 'ASC')); ?>
             <?php
